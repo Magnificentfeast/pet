@@ -1,0 +1,75 @@
+.pet-life {
+  margin-bottom: 130rpx;
+}
+.pet-life .search-box {
+  margin: 12rpx 30rpx;
+}
+.pet-life .content {
+  padding: 14rpx;
+}
+.pet-life .content .water {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0rpx 0rpx 51rpx 0rpx rgba(179, 179, 179, 0.25);
+          box-shadow: 0rpx 0rpx 51rpx 0rpx rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  overflow: hidden;
+  margin-bottom: 16rpx;
+}
+.pet-life .content .water.left {
+  margin-right: 15rpx;
+}
+.pet-life .content .water .img {
+  width: 100%;
+  display: block;
+}
+.pet-life .content .water .title {
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #333333;
+  line-height: 35rpx;
+  width: 300rpx;
+  margin: 20rpx;
+}
+.pet-life .content .water .infos {
+  color: #999999;
+  height: 40rpx;
+  margin: 10rpx;
+  position: relative;
+}
+.pet-life .content .water .infos::after {
+  content: '';
+  clear: both;
+}
+.pet-life .content .water .infos .userInfo {
+  font-size: 26rpx;
+  font-family: SF UI Display;
+  font-weight: 400;
+  display: inline-block;
+}
+.pet-life .content .water .infos .userInfo .headimg {
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 12rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.pet-life .content .water .infos .userInfo .name {
+  float: left;
+}
+.pet-life .content .water .infos .likeNumber {
+  float: right;
+  display: inline-block;
+  margin-right: 15rpx;
+}
+.pet-life .content .water .infos .likeNumber .likeicon {
+  width: 28rpx;
+  height: 22rpx;
+  font-size: 26rpx;
+  font-family: SF UI Display;
+  font-weight: 400;
+  margin-right: 15rpx;
+}
+

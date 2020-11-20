@@ -1,0 +1,203 @@
+{
+  "pages": [
+    "pages/tabbar/index/index",
+    "pages/tabbar/pet-life/pet-life",
+    "pages/tabbar/message/message",
+    "pages/tabbar/my/my",
+    "pages/home/home",
+    "pages/example/components",
+    "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+    "pages/example/js",
+    "pages/example/template",
+    "uview-ui/components/u-full-screen/u-full-screen"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/componentsC",
+      "pages": [
+        "test/index",
+        "gap/index",
+        "subsection/index",
+        "section/index",
+        "link/index",
+        "mask/index",
+        "countTo/index",
+        "color/index",
+        "countDown/index",
+        "progress/index",
+        "alertTips/index",
+        "badge/index",
+        "button/index",
+        "collapse/index",
+        "actionSheet/index",
+        "messageInput/index",
+        "popup/index",
+        "cell/index",
+        "numberBox/index",
+        "grid/index",
+        "layout/index",
+        "loadmore/index"
+      ]
+    },
+    {
+      "root": "pages/template",
+      "pages": [
+        "wxCenter/index",
+        "keyboardPay/index",
+        "mallMenu/index2",
+        "mallMenu/index1",
+        "coupon/index",
+        "login/index",
+        "citySelect/index",
+        "submitBar/index",
+        "comment/index",
+        "comment/reply",
+        "order/index",
+        "login/code",
+        "address/index",
+        "address/addSite"
+      ]
+    },
+    {
+      "root": "pages/library",
+      "pages": [
+        "debounce/index",
+        "deepClone/index",
+        "deepMerge/index",
+        "getRect/index",
+        "timeFrom/index",
+        "globalVariable/globalData",
+        "globalVariable/prototype",
+        "globalVariable/vuex",
+        "globalVariable/index",
+        "http/index",
+        "test/index",
+        "mpShare/index",
+        "color/index",
+        "trim/index",
+        "random/index",
+        "md5/index",
+        "colorSwitch/index",
+        "randomArray/index",
+        "guid/index",
+        "timeFormat/index",
+        "route/index",
+        "route/routeTo",
+        "queryParams/index"
+      ]
+    },
+    {
+      "root": "pages/componentsA",
+      "pages": [
+        "parse/index",
+        "backTop/index",
+        "calendar/index",
+        "form/index",
+        "select/index",
+        "slider/index",
+        "fullScreen/index",
+        "navbar/index",
+        "field/index",
+        "modal/index",
+        "indexList/index",
+        "empty/index",
+        "avatarCropper/index",
+        "noNetwork/index",
+        "icon/index",
+        "avatar/index",
+        "keyboard/index",
+        "lazyLoad/index",
+        "tabs/index",
+        "tag/index",
+        "timeLine/index",
+        "toast/index",
+        "topTips/index",
+        "verificationCode/index"
+      ]
+    },
+    {
+      "root": "pages/componentsB",
+      "pages": [
+        "dropdown/index",
+        "tabbar/index",
+        "line/index",
+        "image/index",
+        "card/index",
+        "divider/index",
+        "picker/index",
+        "noticeBar/index",
+        "checkbox/index",
+        "radio/index",
+        "loading/index",
+        "switch/index",
+        "skeleton/index",
+        "upload/index",
+        "waterfall/index",
+        "table/index",
+        "rate/index",
+        "readMore/index",
+        "search/index",
+        "steps/index",
+        "sticky/index",
+        "swiper/index",
+        "swipeAction/index"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uView",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#909399",
+    "selectedColor": "#303133",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/index/index",
+        "iconPath": "static/images/tabbar1.png",
+        "selectedIconPath": "static/images/tabbar1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/pet-life/pet-life",
+        "iconPath": "static/images/tabbar2.png",
+        "selectedIconPath": "static/images/tabbar2.png",
+        "text": "宠圈"
+      },
+      {
+        "pagePath": "pages/example/components",
+        "iconPath": "/static/uview/example/min_button.png",
+        "selectedIconPath": "/static/uview/example/min_button_select.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/tabbar/message/message",
+        "iconPath": "static/images/tabbar3.png",
+        "selectedIconPath": "static/images/tabbar3.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/tabbar/my/my",
+        "iconPath": "static/images/tabbar4.png",
+        "selectedIconPath": "static/images/tabbar4.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/example/components": {
+      "network": "all",
+      "packages": [
+        "pages/componentsA",
+        "pages/componentsB",
+        "pages/componentsC"
+      ]
+    }
+  },
+  "usingComponents": {}
+}

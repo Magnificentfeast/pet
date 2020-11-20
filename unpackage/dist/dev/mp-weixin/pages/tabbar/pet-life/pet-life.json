@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "宠物生活圈",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "pet-life-u-waterfall-left": "/pages/tabbar/pet-life/pet-life-u-waterfall-left",
+    "pet-life-u-waterfall-right": "/pages/tabbar/pet-life/pet-life-u-waterfall-right",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "u-waterfall": "/uview-ui/components/u-waterfall/u-waterfall",
+    "u-lazy-load": "/uview-ui/components/u-lazy-load/u-lazy-load",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}
