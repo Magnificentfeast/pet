@@ -1,0 +1,7 @@
+page {
+  background-color: #FFFFFF;
+}
+page .main .search-box {
+  margin: 12rpx 30rpx 0;
+}
+

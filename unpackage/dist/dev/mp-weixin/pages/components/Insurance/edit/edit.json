@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "上传理赔资料",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-upload": "/uview-ui/components/u-upload/u-upload"
+  }
+}

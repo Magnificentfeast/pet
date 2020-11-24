@@ -1,0 +1,125 @@
+.edit {
+  background: #f9f9f9;
+  padding-bottom: 140rpx;
+}
+.edit .tip {
+  background: -webkit-linear-gradient(51deg, #DD1939, #FF7800);
+  background: linear-gradient(39deg, #DD1939, #FF7800);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  margin: 17rpx 30rpx 0;
+  padding: 20rpx 30rpx;
+  color: #FFFFFF;
+  text-shadow: 0px -5px 10px rgba(119, 119, 119, 0.2);
+  line-height: 40rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+}
+.edit .tip .title {
+  font-size: 28rpx;
+}
+.edit .tip .text {
+  font-size: 25rpx;
+}
+.edit .cell-gruops {
+  margin: 20rpx 30rpx 0;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 0px 51px 0px rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+}
+.edit .cell-gruops .cell-box {
+  height: 150rpx;
+  position: relative;
+  border-bottom: 2rpx solid #F0F0F0;
+}
+.edit .cell-gruops .cell-box .icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.edit .cell-gruops .cell-box .icon.bingli {
+  width: 60rpx;
+  height: 81rpx;
+  left: 38rpx;
+}
+.edit .cell-gruops .cell-box .icon.huayan {
+  width: 62rpx;
+  height: 90rpx;
+  left: 38rpx;
+}
+.edit .cell-gruops .cell-box .icon.shuzi {
+  width: 72rpx;
+  height: 65rpx;
+  left: 32rpx;
+}
+.edit .cell-gruops .cell-box .icon.chufang {
+  width: 60rpx;
+  height: 76rpx;
+  left: 38rpx;
+}
+.edit .cell-gruops .cell-box .icon.shoushu {
+  width: 70rpx;
+  height: 71rpx;
+  left: 33rpx;
+}
+.edit .cell-gruops .cell-box .icon.qindan {
+  width: 79rpx;
+  height: 60rpx;
+  left: 29rpx;
+}
+.edit .cell-gruops .cell-box .icon.fapiao {
+  width: 60rpx;
+  height: 76rpx;
+  left: 38rpx;
+}
+.edit .cell-gruops .cell-box .info {
+  display: inline-block;
+  width: 400rpx;
+  position: absolute;
+  left: 130rpx;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.edit .cell-gruops .cell-box .info .title {
+  font-size: 45rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+}
+.edit .cell-gruops .cell-box .info .text {
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+}
+.edit .cell-gruops .cell-box .upload-icon {
+  display: inline-block;
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+}
+.edit .btn {
+  height: 100rpx;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.edit .submit {
+  background-color: #18abff;
+  color: #FFFFFF;
+  margin: 88rpx 25rpx 0;
+}
+.edit .zancun {
+  margin: 34rpx 200rpx 0;
+  border: 2px solid #DDDDDD;
+  color: #777777;
+}
+

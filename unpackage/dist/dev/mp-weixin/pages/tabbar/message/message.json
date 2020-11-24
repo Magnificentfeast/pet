@@ -2,6 +2,8 @@
   "navigationBarTitleText": "消息",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-search": "/uview-ui/components/u-search/u-search"
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-badge": "/uview-ui/components/u-badge/u-badge",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
   }
 }

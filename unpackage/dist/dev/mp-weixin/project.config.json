@@ -28,8 +28,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/tabbar/message/message",
-          "pathName": "pages/tabbar/message/message",
+          "name": "pages/components/seachTab/main/main",
+          "pathName": "pages/components/seachTab/main/main",
           "query": "",
           "scene": null
         }

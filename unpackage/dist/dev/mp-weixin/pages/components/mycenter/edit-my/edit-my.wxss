@@ -1,0 +1,50 @@
+.edit {
+  background: #f9f9f9;
+  padding-top: 30rpx;
+}
+.edit .cell-gruops {
+  font-size: 30rpx;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0rpx 15rpx 15rpx 0px rgba(119, 119, 119, 0.05);
+          box-shadow: 0rpx 15rpx 15rpx 0px rgba(119, 119, 119, 0.05);
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
+  overflow: hidden;
+  margin: 40rpx 40rpx 0;
+}
+.edit .cell-gruops .cell-box {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.15);
+  height: 100rpx;
+  padding: 0 55rpx;
+  line-height: 100rpx;
+}
+.edit .cell-gruops .cell-box:last-child {
+  border: none;
+}
+.edit .cell-gruops .cell-box .cell-title {
+  float: left;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #555555;
+}
+.edit .cell-gruops .cell-box .cell-item-box {
+  float: right;
+  position: relative;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+}
+.edit .cell-gruops .cell-box .cell-item-box image {
+  display: inline-block;
+}
+.edit .cell-gruops .cell-box .cell-item-box .headimg {
+  width: 75rpx;
+  height: 75rpx;
+  vertical-align: middle;
+}
+.edit .cell-gruops .cell-box .cell-item-box .right-arrow {
+  width: 19rpx;
+  height: 33rpx;
+  margin-left: 25rpx;
+}
+

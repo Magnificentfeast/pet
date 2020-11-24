@@ -9,7 +9,11 @@
     "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
     "pages/example/js",
     "pages/example/template",
-    "uview-ui/components/u-full-screen/u-full-screen"
+    "uview-ui/components/u-full-screen/u-full-screen",
+    "pages/components/mycenter/edit-my/edit-my",
+    "pages/components/Insurance/edit/edit",
+    "pages/components/Insurance/main/main",
+    "pages/components/seachTab/main/main"
   ],
   "subPackages": [
     {

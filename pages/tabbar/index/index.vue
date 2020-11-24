@@ -1,6 +1,6 @@
 <template>
 	<view class="index">
-		<view class="container">
+		<view class="container" style="padding-bottom: 34rpx;">
 			<view class="banner">
 				<image :src="banner" mode="aspectFill"></image>
 			</view>
@@ -31,7 +31,7 @@
 			</view>
 		</view>
 		
-		<view class="container">
+		<view class="container" style="padding:28rpx 0;">
 			<view class="quick-link-box">
 				<view>
 					<image src="../../../static/images/jilu.png" mode="aspectFill"></image>
@@ -149,7 +149,8 @@
 	margin-bottom: 130rpx;
 	.container{
 		background: #FFFFFF;
-		margin-bottom: 16px;
+		margin-bottom: 16rpx;
+		
 		.banner{
 				margin: 26rpx 30rpx;
 				overflow: hidden;
@@ -230,7 +231,7 @@
 			}
 		}
 		.quick-link{
-			margin: 0 30rpx 34rpx;
+			margin: 0 30rpx;
 			background: rgba(255, 255, 255, 0);
 			box-shadow: 0px 0px 50rpx 0px rgba(0, 0, 0, 0.1);
 			border-radius: 60rpx;
@@ -262,7 +263,7 @@
 			}
 		}
 		.quick-link-box{
-			margin: 28rpx 30rpx;
+			margin: 0rpx 30rpx;
 			display: flex;
 			view:first-child{
 				margin-right: 40rpx;

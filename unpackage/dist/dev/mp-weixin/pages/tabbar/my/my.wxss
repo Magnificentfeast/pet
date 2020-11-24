@@ -1,1 +1,276 @@
-/* pages/tabbar/my/my.wxss */
+.my {
+  background: #f9f9f9;
+  padding-bottom: 140rpx;
+}
+.my .user-box {
+  height: 300rpx;
+  background: #2E8DF4;
+  padding: 23rpx 30rpx 0;
+}
+.my .user-box .head-img {
+  width: 145rpx;
+  height: 145rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+.my .user-box .user-info {
+  display: inline-block;
+  margin-left: 30rpx;
+  color: #FFFFFF;
+  line-height: 38rpx;
+}
+.my .user-box .user-info .name {
+  font-size: 40rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  margin-bottom: 12rpx;
+}
+.my .user-box .user-info .sign {
+  font-size: 23rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+}
+.my .user-box .user-info .lv {
+  width: 162rpx;
+  height: 67rpx;
+  margin-left: -10rpx;
+}
+.my .user-box .setting {
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.my .user-data {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 0px 51px 0px rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  margin: -50rpx 30rpx 0;
+  padding: 30rpx;
+  line-height: 38rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.my .user-data .data-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.my .user-data .data-item .num {
+  font-size: 40rpx;
+  font-family: DIN;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 34rpx;
+}
+.my .user-data .data-item .text {
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+}
+.my .tabs {
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  font-size: 28rpx;
+}
+.my .tabs .tab-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+  border-left: 1px solid #F3F3F3;
+}
+.my .tabs .tab-item:first-child {
+  border-left: none;
+}
+.my .tabs .tab-item .img {
+  margin: 0 auto;
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+}
+.my .tabs .tab-item .img image {
+  width: 100%;
+  height: 100%;
+}
+.my .tabs .tab-item .text {
+  text-align: center;
+  position: relative;
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 auto;
+}
+.my .line-title {
+  margin: 0 30rpx;
+  font-size: 38rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #000000;
+  line-height: 38rpx;
+  padding-left: 18rpx;
+  padding-top: 24rpx;
+  padding-bottom: 12rpx;
+  position: relative;
+}
+.my .line-title .add {
+  float: right;
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  line-height: 38rpx;
+  border: 2rpx solid #DDDDDD;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  padding: 0 15rpx;
+}
+.my .line-title::before {
+  content: '';
+  height: 35rpx;
+  width: 8rpx;
+  background: #18ABFF;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 27rpx;
+}
+.my .pets {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 51rpx 0px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 0px 51rpx 0px rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  margin: 50rpx 30rpx 0;
+}
+.my .pets .pet-item {
+  padding: 25rpx 38rpx;
+  border-bottom: 1px solid #F4F4F4;
+  position: relative;
+}
+.my .pets .pet-item .head-img {
+  width: 120rpx;
+  height: 120rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.my .pets .pet-item .infos {
+  display: inline-block;
+  margin-left: 29rpx;
+}
+.my .pets .pet-item .infos .name {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 15rpx;
+}
+.my .pets .pet-item .infos .info {
+  font-size: 20rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 12rpx;
+}
+.my .pets .pet-item .infos .idNum {
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+}
+.my .pets .pet-item .baozhang {
+  position: absolute;
+  display: inline-block;
+  right: 30rpx;
+  width: 65rpx;
+  height: 104rpx;
+}
+.my .baodan {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 51rpx 0px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 0px 51rpx 0px rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  margin: 28rpx 30rpx 0;
+}
+.my .baodan .line-title {
+  padding-bottom: 0;
+}
+.my .baodan .baodan-item {
+  padding: 30rpx;
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  line-height: 38rpx;
+  border-bottom: 1px solid #F4F4F4;
+}
+.my .baodan .baodan-item .petname .renzheng {
+  display: inline-block;
+  width: 160rpx;
+  height: 40rpx;
+  border: 2px solid #F52162;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  margin-left: 15rpx;
+}
+.my .baodan .baodan-item .petname .renzheng image {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 6rpx;
+  margin-right: 8rpx;
+}
+.my .baodan .baodan-item .petname .renzheng text {
+  font-size: 20rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #F52162;
+  position: absolute;
+  margin-right: 14rpx;
+}
+.my .baodan .btn-box {
+  margin-top: 28rpx;
+}
+.my .baodan .btn-box .btn {
+  display: inline-block;
+  width: 200rpx;
+  height: 60rpx;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 0px 51px 0px rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.my .baodan .btn-box .default {
+  border: 1px solid #777777;
+  color: #777777;
+  margin-left: 40rpx;
+}
+.my .baodan .btn-box .primary {
+  background: #18abff;
+  color: #FFFFFF;
+}
+
