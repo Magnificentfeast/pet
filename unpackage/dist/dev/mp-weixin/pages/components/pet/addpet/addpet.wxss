@@ -1,0 +1,148 @@
+.addpet {
+  padding-bottom: 54rpx;
+}
+.addpet .head {
+  position: relative;
+}
+.addpet .head .bg {
+  height: 600rpx;
+  width: 100%;
+  z-index: -1;
+}
+.addpet .head .img {
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  left: 50%;
+  bottom: 79rpx;
+  margin-left: -100rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.addpet .head .upload {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 79rpx;
+  margin-left: -100rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.addpet .head .upload .icon {
+  width: 78rpx;
+  height: 68rpx;
+  margin: 45rpx 60rpx 0;
+}
+.addpet .head .upload .text {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+}
+.addpet .cell-gruops {
+  font-size: 30rpx;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0rpx 15rpx 15rpx 0px rgba(119, 119, 119, 0.05);
+          box-shadow: 0rpx 15rpx 15rpx 0px rgba(119, 119, 119, 0.05);
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
+  overflow: hidden;
+  margin: 0 40rpx 0;
+}
+.addpet .cell-gruops .u-form-item {
+  padding: 0 28rpx;
+}
+.addpet .cell-gruops .select {
+  margin-bottom: 10rpx;
+}
+.addpet .cell-gruops .select .select-item {
+  width: 275rpx;
+  height: 60rpx;
+  background: #D7D7D7;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  display: inline-block;
+  line-height: 60rpx;
+  text-align: center;
+}
+.addpet .cell-gruops .select .select-item:last-child {
+  margin-left: 60rpx;
+}
+.addpet .cell-gruops .select .checked {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAA8CAMAAABy+q7dAAACIlBMVEUAAAAAqv8Akv8Atv8Ppf8Oqv8cqv8Vqv8Urf8Kp/8TqP8MpP8Sqv8SrP8YrP8MqP8Zqv8Yq/8YrP8brP8Yqv8Yq/8dq/8XrP8Xqv8Wqv8frv8Wq/8Wqf8frv8XrP8Xq/8Xq/8osf8Yq/8osf8Xq/8Xqv8Yqv8Yq/8us/8Yq/8ztP8Xqv8Yq/8ytP8Xq/8Yqv8Yq/8Yqv8Yq/85tv8Xqv8Xq/8Xq/9uyv8Xq/9tyv8Yq/8Yq/8YrP9xzP8Yq/9yy/8Yq/+B0f8Xq/8Yq/89uf8Xq/8Yq/8arP8xs/89uv8+uv9Buv9Bu/8Yq/8Yq/+r4f8Xqv+r4P8Yq/+35f8Yq/+45f/Q7/8RqP8SqP8Vqv8Wqv8Xqv8Yqv8Yq/8crP8drP8drf8erP8erf8hrv8irv8nsP8osP8psf8vs/8ytP80tP8/uf9Auf9Buv9Eu/9Fu/9Gu/9Ov/9Pv/9TwP9Wwf9Zw/9bw/9ixf9ryf9tyv9vyv91zf92zf+A0f+C0f+H1P+L1P+N1f+U2P+V2P+b2v+c2/+h3P+l3v+15P+75v/A6f/B6P/K7P/L7P/M7P/N7P/P7f/S7v/T7//V7//V8P/Y8P/Y8f/Z8f/c8v/d8//e8//f8//h9P/i9P/j9P/k9f/l9f/m9v/n9v/o9v/q9//s+P/t+P/u+P/w+f/w+v/z+//0+//2/P/3/P/4/P/5/f/6/f/8/v/9/v/+/v/+//////+GIDKlAAAAV3RSTlMABgcHERISGBkaKSoqKyssXV5fX2BhYW5vcnJzdHSEhYaGi4ywsbW2tsLCx8jI2tzg4eHh5eXm5ufn6+zs7O3t7u7w8/P29vb29vb29vj5+fr6/f3+/v6jzwNVAAACOklEQVR42u3bz3KaUBQG8O/ei0SKoKBGDSST6dQ8eVdd9AW6yDN00X0moSni/1gCKnC7CCYiPkHv+bbsfnPOuWeYOQwAeNO2zK6A0slmr5vNNgfAAGitkdPtQPms5stwkwEMuBj2b0wSAYD4cRpuIaAPb8Y6cQAA9H6RJ7lgjj8mjPc4aZIIy/vSIIqPmGnK7a5BEEcxXJub9OBU45q8RfO1Gs3kDrXOSfM4XJDCSQQng1rIhEzIhEzIhEzIhEzIhEzIhEz+278FRFBNUUiqkxMSaXAyqZLk9ohR71RJrCtXI5MqiT9OCuqdExKbZuwpSZv2k3MkZFInIZM6CZnUScikTkImdRIyqZOQSZ2ETOok9P/kg6SIt9YF1UmlSl5//QyoTiok+UPEGM2TyixZzdPLPpkck+yChT0ylTc5JikmoRxectVNKo9w8mfteE3V95MKSR5Ees9RfWcrSZJwLQH8ncb9G03xne1QJU8PxucRzx5nrZ71vsdmajeOlgcy85fT3LsuW0butblrqEhie2+zxE+1Z5kkK3tUDlj5Y6klO0NhEuh3jEVxLgblO4xsH2vxqq0wCaDdNbSguPUPpxjxIhbQOw2FSQDe5tCHflkm+benSOwl76lMAnC73b0+1MXkPlgKZJy3VSYBmGGV1ynZ7OvvKNewC3l6pcwtbSE73tg6/20ff3+Owj0YgIY1cLuK1ErW9AbnH1oZ3y/mk5f92x06hGHZn1wlrpskZ0LKs1WyjF/WSQHgH7B85bpYiPO1AAAAAElFTkSuQmCC) no-repeat;
+  background-size: 100%;
+  color: #FFFFFF;
+}
+.addpet .base {
+  position: relative;
+  top: -40rpx;
+}
+.addpet .phone {
+  margin-top: 40rpx;
+}
+.addpet .phone .title {
+  font-size: 30rpx;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #313131;
+  line-height: 100rpx;
+  padding: 0 28rpx;
+}
+.addpet .phone .phone-item {
+  color: #555555;
+}
+.addpet .phone .phone-item .img-box {
+  position: relative;
+  border: 2rpx solid #DDDDDD;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  height: 253rpx;
+  width: 100%;
+  margin-bottom: 24rpx;
+  overflow: hidden;
+}
+.addpet .phone .phone-item .img-box .icon {
+  width: 64rpx;
+  height: 56rpx;
+  margin: 95rpx 63rpx 0;
+}
+.addpet .phone .phone-item .img-box video {
+  width: 100%;
+  height: 100%;
+}
+.addpet .phone .phone-item .img-box .u-clear-icon {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}
+.addpet .phone .phone-item .text {
+  text-align: center;
+  margin-bottom: 35rpx;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+}
+.addpet .btn {
+  height: 100rpx;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.addpet .submit {
+  background-color: #18abff;
+  color: #FFFFFF;
+  margin: 88rpx 25rpx 0;
+}
+.addpet .zancun {
+  margin: 34rpx 200rpx 0;
+  border: 2px solid #DDDDDD;
+  color: #777777;
+}
+

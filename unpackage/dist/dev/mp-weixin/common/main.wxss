@@ -3370,4 +3370,193 @@ image {
 page {
   background-color: #F9F9F9;
 }
+/*通用*/
+.title {
+  font-size: 35rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #333333;
+  position: relative;
+  margin-top: 25rpx;
+}
+.title .right-bar {
+  position: absolute;
+  display: inline-block;
+  right: 0rpx;
+  top: 3rpx;
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+}
+.modal-contect {
+  padding: 50rpx 0 36rpx;
+  text-align: center;
+}
+.modal-contect .icon {
+  width: 192rpx;
+  height: 192rpx;
+  margin: 0 auto;
+}
+.modal-contect .title {
+  color: #242E42;
+  font-size: 40rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  margin: 43rpx 0 32rpx;
+}
+.modal-contect .text {
+  width: 369rpx;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #8A8A8F;
+  margin: 0 auto;
+}
+/*组框*/
+.cell-gruops {
+  font-size: 30rpx;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0rpx 15rpx 15rpx 0px rgba(119, 119, 119, 0.05);
+          box-shadow: 0rpx 15rpx 15rpx 0px rgba(119, 119, 119, 0.05);
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
+  overflow: hidden;
+}
+.cell-gruops .cell-box {
+  padding: 20rpx 40rpx;
+}
+/*宠物列表*/
+.pet-item {
+  padding: 25rpx 38rpx;
+  border-bottom: 1px solid #F4F4F4;
+  position: relative;
+}
+.pet-item .head-img {
+  width: 120rpx;
+  height: 120rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.pet-item .infos {
+  display: inline-block;
+  margin-left: 29rpx;
+}
+.pet-item .infos .name {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 15rpx;
+}
+.pet-item .infos .name .sex {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 13rpx;
+}
+.pet-item .infos .info {
+  font-size: 20rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 12rpx;
+}
+.pet-item .infos .idNum {
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+}
+.pet-item .baozhang {
+  position: absolute;
+  display: inline-block;
+  right: 30rpx;
+  width: 65rpx;
+  height: 104rpx;
+}
+/*按钮*/
+.btn {
+  height: 100rpx;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.submit {
+  background-color: #18abff;
+  color: #FFFFFF;
+  margin: 88rpx 25rpx 0;
+}
+/*瀑布流*/
+.pet-life {
+  padding: 14rpx;
+}
+.pet-life .water {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0rpx 0rpx 51rpx 0rpx rgba(179, 179, 179, 0.25);
+          box-shadow: 0rpx 0rpx 51rpx 0rpx rgba(179, 179, 179, 0.25);
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  overflow: hidden;
+  margin-bottom: 16rpx;
+}
+.pet-life .water.left {
+  margin-right: 15rpx;
+}
+.pet-life .water .img {
+  width: 100%;
+  display: block;
+}
+.pet-life .water .title {
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #333333;
+  line-height: 35rpx;
+  width: 300rpx;
+  margin: 20rpx;
+}
+.pet-life .water .infos {
+  margin: 10rpx;
+  color: #999999;
+  height: 40rpx;
+  margin: 10rpx;
+  position: relative;
+}
+.pet-life .water .infos::after {
+  content: '';
+  clear: both;
+}
+.pet-life .water .infos .userInfo {
+  font-size: 26rpx;
+  font-family: SF UI Display;
+  font-weight: 400;
+  display: inline-block;
+}
+.pet-life .water .infos .userInfo .headimg {
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 12rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.pet-life .water .infos .userInfo .name {
+  float: left;
+}
+.pet-life .water .infos .likeNumber {
+  float: right;
+  display: inline-block;
+  margin-right: 15rpx;
+}
+.pet-life .water .infos .likeNumber1 {
+  float: right;
+  display: inline-block;
+  margin-right: 15rpx;
+  color: #fa3534;
+}
 

@@ -1,0 +1,1 @@
+<view class="pet-life"><u-waterfall generic:scoped-slots-left="petLifeList-u-waterfall-left" generic:scoped-slots-right="petLifeList-u-waterfall-right" bind:input="__e" vue-id="7fdec023-1" value="{{WaterfallList}}" data-event-opts="{{[['^input',[['__set_model',['','WaterfallList','$event',[]]]]]]}}" bind:__l="__l" vue-slots="{{['right','left']}}"></u-waterfall></view>

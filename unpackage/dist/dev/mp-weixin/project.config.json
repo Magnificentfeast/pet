@@ -13,25 +13,27 @@
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "宠物医院-个人端",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
-    "plugin": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "gamePlugin": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
+      "current": 0,
       "list": [
         {
-          "name": "pages/components/seachTab/main/main",
-          "pathName": "pages/components/seachTab/main/main",
-          "query": "",
-          "scene": null
+          "id": 0,
+          "name": "pages/components/mycenter/mytrends/mytrends",
+          "pathName": "pages/components/mycenter/mytrends/mytrends",
+          "query": ""
         }
       ]
     }

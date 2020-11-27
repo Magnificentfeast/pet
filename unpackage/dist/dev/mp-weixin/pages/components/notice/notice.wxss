@@ -1,0 +1,39 @@
+.notice {
+  padding: 50rpx 30rpx;
+}
+.notice .cell-gruops {
+  padding: 30rpx 46rpx;
+  margin-bottom: 35rpx;
+  position: relative;
+}
+.notice .cell-gruops .title {
+  font-size: 35rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #333333;
+}
+.notice .cell-gruops .content {
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  margin-top: 21rpx;
+}
+.notice .cell-gruops .time {
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  margin-top: 38rpx;
+}
+.notice .cell-gruops .time .year {
+  margin-right: 20rpx;
+}
+.notice .cell-gruops .new {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 62rpx;
+  height: 62rpx;
+}
+

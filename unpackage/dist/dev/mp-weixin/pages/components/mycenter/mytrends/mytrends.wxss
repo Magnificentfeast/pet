@@ -1,0 +1,42 @@
+.trends {
+  background-color: #FFFFFF;
+}
+.trends .tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 150rpx;
+  text-align: center;
+}
+.trends .tabs .tab {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  margin-top: 30rpx;
+  line-height: 40rpx;
+  height: 60rpx;
+}
+.trends .tabs .tab .num {
+  margin-left: 5rpx;
+  font-size: 32rpx;
+  color: #555555;
+}
+.trends .tabs .curre {
+  font-size: 42rpx;
+  font-weight: 500;
+}
+.trends .tabs .curre::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 75rpx;
+  height: 8rpx;
+  margin: 0 auto;
+  background: #2758FD;
+}
+

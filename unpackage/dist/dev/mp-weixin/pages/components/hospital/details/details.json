@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-rate": "/uview-ui/components/u-rate/u-rate",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-gap": "/uview-ui/components/u-gap/u-gap",
+    "u-tag": "/uview-ui/components/u-tag/u-tag"
+  }
+}

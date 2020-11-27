@@ -2,6 +2,9 @@
   "navigationBarTitleText": "搜索",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-search": "/uview-ui/components/u-search/u-search"
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "hospital-list": "/components/list/hospitalList",
+    "pet-life-list": "/components/list/petLifeList",
+    "user-list": "/components/list/userList"
   }
 }

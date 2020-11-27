@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的动态",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "pet-life-list": "/components/list/petLifeList"
+  }
+}

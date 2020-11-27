@@ -4,4 +4,56 @@ page {
 page .main .search-box {
   margin: 12rpx 30rpx 0;
 }
+page .main .tabs {
+  margin-top: 16rpx;
+  padding: 0 30rpx;
+  position: relative;
+  font-size: 28rpx;
+  background: #F7F7F7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+page .main .tabs .tab-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+page .main .tabs .tab-item .img {
+  margin: 0 auto;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 21rpx;
+  margin-bottom: 20rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+}
+page .main .tabs .tab-item .img image {
+  width: 100%;
+  height: 100%;
+}
+page .main .tabs .tab-item .text {
+  text-align: center;
+  position: relative;
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 auto;
+  padding-bottom: 24rpx;
+}
+page .main .tabs .tab-item .text.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10rpx;
+  background: -webkit-linear-gradient(45deg, #3B1291, #8629E4);
+  background: linear-gradient(45deg, #3B1291, #8629E4);
+  width: 60%;
+  margin: 0 auto;
+}
 

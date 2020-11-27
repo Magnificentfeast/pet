@@ -1,0 +1,166 @@
+.banner {
+  position: relative;
+}
+.banner .bg {
+  height: 437rpx;
+  width: 100%;
+}
+.content {
+  position: relative;
+  top: -150rpx;
+}
+.content .cell-gruops {
+  margin: 0 30rpx;
+  margin-bottom: 25rpx;
+}
+.content .cell-gruops .left-icon {
+  position: absolute;
+  display: inline-block;
+  right: 30rpx;
+  width: 31rpx;
+  height: 50rpx;
+  top: 70rpx;
+}
+.content .cell-gruops .icon {
+  width: 56rpx;
+  height: 76rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .cell-gruops .cell-content {
+  display: inline-block;
+  margin-left: 34rpx;
+}
+.content .cell-gruops .cell-content .title {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #555555;
+  margin-bottom: 14rpx;
+}
+.content .cell-gruops .cell-content .address {
+  font-size: 28rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 17rpx;
+}
+.content .cell-gruops .cell-content .addres-btn {
+  width: 200rpx;
+  height: 50rpx;
+  border: 2rpx solid #DDDDDD;
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  line-height: 50rpx;
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+}
+.content .describe .title {
+  font-size: 35rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #333333;
+  height: 50rpx;
+  position: relative;
+}
+.content .describe .title .edit-icon {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 24rpx;
+}
+.content .describe .title text {
+  position: absolute;
+  left: 73rpx;
+}
+.content .describe .title .right {
+  float: right;
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  line-height: 50rpx;
+}
+.content .describe .textarea {
+  height: 250rpx;
+  margin-top: 20rpx;
+}
+.content .describe .textarea textarea {
+  height: 100%;
+  font-size: 28rpx;
+}
+.content .describe .tip {
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #C7C7C7;
+  line-height: 35rpx;
+}
+.content .describe .upload-box {
+  padding-top: 50rpx;
+}
+.content .describe .upload-box .upload {
+  width: 150rpx;
+  height: 150rpx;
+  border: 2rpx dashed #E4E4E4;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 10rpx;
+}
+.content .describe .upload-box .upload .icon {
+  width: 65rpx;
+  height: 48rpx;
+  margin: 27rpx 42rpx 15rpx;
+}
+.content .describe .upload-box .upload .text {
+  margin-top: 21rpx;
+  margin-bottom: 15rpx;
+  font-size: 20rpx;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+}
+.content .describe .upload-box .upload .u-clear-icon {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+.content .describe .upload-box .upload video {
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  position: relative;
+  top: -100rpx;
+}
+.modal-contect {
+  padding: 50rpx 0 36rpx;
+  text-align: center;
+}
+.modal-contect .icon {
+  width: 192rpx;
+  height: 192rpx;
+  margin: 0 auto;
+}
+.modal-contect .title {
+  color: #242E42;
+  font-size: 40rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  margin: 43rpx 0 32rpx;
+}
+.modal-contect .text {
+  width: 369rpx;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #8A8A8F;
+  margin: 0 auto;
+}
+

@@ -4,150 +4,20 @@
     "pages/tabbar/pet-life/pet-life",
     "pages/tabbar/message/message",
     "pages/tabbar/my/my",
-    "pages/home/home",
-    "pages/example/components",
-    "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
-    "pages/example/js",
-    "pages/example/template",
-    "uview-ui/components/u-full-screen/u-full-screen",
     "pages/components/mycenter/edit-my/edit-my",
     "pages/components/Insurance/edit/edit",
     "pages/components/Insurance/main/main",
-    "pages/components/seachTab/main/main"
+    "pages/components/seachTab/main/main",
+    "pages/components/pet/addpet/addpet",
+    "pages/components/pet/addPetLife/addPetLife",
+    "pages/components/pet/quickTreat/quickTreat",
+    "pages/components/hospital/main/main",
+    "pages/components/hospital/details/details",
+    "pages/components/hospital/yuyue/yuyue",
+    "pages/components/notice/notice",
+    "pages/components/mycenter/mytrends/mytrends"
   ],
-  "subPackages": [
-    {
-      "root": "pages/componentsC",
-      "pages": [
-        "test/index",
-        "gap/index",
-        "subsection/index",
-        "section/index",
-        "link/index",
-        "mask/index",
-        "countTo/index",
-        "color/index",
-        "countDown/index",
-        "progress/index",
-        "alertTips/index",
-        "badge/index",
-        "button/index",
-        "collapse/index",
-        "actionSheet/index",
-        "messageInput/index",
-        "popup/index",
-        "cell/index",
-        "numberBox/index",
-        "grid/index",
-        "layout/index",
-        "loadmore/index"
-      ]
-    },
-    {
-      "root": "pages/template",
-      "pages": [
-        "wxCenter/index",
-        "keyboardPay/index",
-        "mallMenu/index2",
-        "mallMenu/index1",
-        "coupon/index",
-        "login/index",
-        "citySelect/index",
-        "submitBar/index",
-        "comment/index",
-        "comment/reply",
-        "order/index",
-        "login/code",
-        "address/index",
-        "address/addSite"
-      ]
-    },
-    {
-      "root": "pages/library",
-      "pages": [
-        "debounce/index",
-        "deepClone/index",
-        "deepMerge/index",
-        "getRect/index",
-        "timeFrom/index",
-        "globalVariable/globalData",
-        "globalVariable/prototype",
-        "globalVariable/vuex",
-        "globalVariable/index",
-        "http/index",
-        "test/index",
-        "mpShare/index",
-        "color/index",
-        "trim/index",
-        "random/index",
-        "md5/index",
-        "colorSwitch/index",
-        "randomArray/index",
-        "guid/index",
-        "timeFormat/index",
-        "route/index",
-        "route/routeTo",
-        "queryParams/index"
-      ]
-    },
-    {
-      "root": "pages/componentsA",
-      "pages": [
-        "parse/index",
-        "backTop/index",
-        "calendar/index",
-        "form/index",
-        "select/index",
-        "slider/index",
-        "fullScreen/index",
-        "navbar/index",
-        "field/index",
-        "modal/index",
-        "indexList/index",
-        "empty/index",
-        "avatarCropper/index",
-        "noNetwork/index",
-        "icon/index",
-        "avatar/index",
-        "keyboard/index",
-        "lazyLoad/index",
-        "tabs/index",
-        "tag/index",
-        "timeLine/index",
-        "toast/index",
-        "topTips/index",
-        "verificationCode/index"
-      ]
-    },
-    {
-      "root": "pages/componentsB",
-      "pages": [
-        "dropdown/index",
-        "tabbar/index",
-        "line/index",
-        "image/index",
-        "card/index",
-        "divider/index",
-        "picker/index",
-        "noticeBar/index",
-        "checkbox/index",
-        "radio/index",
-        "loading/index",
-        "switch/index",
-        "skeleton/index",
-        "upload/index",
-        "waterfall/index",
-        "table/index",
-        "rate/index",
-        "readMore/index",
-        "search/index",
-        "steps/index",
-        "sticky/index",
-        "swiper/index",
-        "swipeAction/index"
-      ]
-    }
-  ],
+  "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uView",
@@ -174,7 +44,7 @@
         "text": "宠圈"
       },
       {
-        "pagePath": "pages/example/components",
+        "pagePath": "pages/tabbar/index/index",
         "iconPath": "/static/uview/example/min_button.png",
         "selectedIconPath": "/static/uview/example/min_button_select.png",
         "text": "发布"
@@ -192,16 +62,6 @@
         "text": "我的"
       }
     ]
-  },
-  "preloadRule": {
-    "pages/example/components": {
-      "network": "all",
-      "packages": [
-        "pages/componentsA",
-        "pages/componentsB",
-        "pages/componentsC"
-      ]
-    }
   },
   "usingComponents": {}
 }

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "添加宠物档案",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-form": "/uview-ui/components/u-form/u-form",
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "u-picker": "/uview-ui/components/u-picker/u-picker",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

@@ -1,0 +1,58 @@
+.main .banner {
+  background-color: #FFFFFF;
+  padding: 26rpx 30rpx;
+  overflow: hidden;
+}
+.main .banner image {
+  width: 100%;
+  height: 275rpx;
+}
+.main .notice-box {
+  padding: 20rpx 37rpx;
+}
+.main .notice-box .left-icon {
+  width: 92rpx;
+  height: 75rpx;
+  display: inline-block;
+  padding-right: 8rpx;
+  position: relative;
+}
+.main .notice-box .left-icon::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 2rpx;
+  background: #BFBFBF;
+}
+.main .notice-box .notice {
+  display: inline-block;
+  width: 580rpx;
+}
+.main .content {
+  background-color: #FFFFFF;
+}
+.main .content .search-box {
+  padding: 20rpx 30rpx;
+}
+.main .content .screen {
+  padding: 20rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 28rpx;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #555555;
+  border-bottom: 1px solid #eeeeee;
+}
+.main .content .screen .item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.main .content .screen u-icon {
+  margin-left: 13rpx;
+}
+
