@@ -107,35 +107,6 @@
 				loadStatus: 'loadmore',
 				
 			};
-		},
-		onReachBottom() {
-			this.loadStatus = 'loading';
-			console.log('上拉')
-			// 模拟数据加载
-			setTimeout(() => {
-				this.addRandomData();
-				this.loadStatus = 'loadmore';
-			}, 1000)
-		},
-		onShow() {
-			this.addRandomData();
-			console.log('组件显示')
-		},	
-		onLoad() {
-			this.addRandomData();
-			console.log('组件登录')
-		},
-		methods:{
-			addRandomData() {
-				for(let i = 0; i < 10; i++) {
-					let index = this.$u.random(0, this.hospitalList.length - 1);
-					// 先转成字符串再转成对象，避免数组对象引用导致数据混乱
-					let item = JSON.parse(JSON.stringify(this.hospitalList[index]))
-					item.id = this.$u.guid();
-					this.hospitalList.push(item);
-					console.log(this.hospitalList) 
-				}
-			},
 		}
 	}
 </script>

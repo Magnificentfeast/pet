@@ -13,12 +13,12 @@
 							<image class="headimg" :src="item.headImg" mode=""></image>
 						    <text class="name">{{item.userName}}</text> 
 						</view>
-						<view class="likeNumber" v-if="item.islike" style="margin-right: 18rpx;">
-							<u-icon name="heart"></u-icon>
+						<view class="likeNumber" v-if="item.islike">
+							<u-icon name="heart" style="margin-right: 12rpx;"></u-icon>
 							{{item.likeNumber}}
 						</view>
 						<view class="likeNumber1" v-else>
-							<u-icon name="heart-fill" color="#fa3534" style="margin-right: 18rpx;"></u-icon>
+							<u-icon name="heart-fill" color="#fa3534" style="margin-right: 12rpx;"></u-icon>
 							{{item.likeNumber}}
 						</view>
 					</view>
@@ -36,12 +36,12 @@
 							<image class="headimg" :src="item.headImg" mode=""></image>
 						    <text class="name">{{item.userName}}</text> 
 						</view>
-						<view class="likeNumber" v-if="item.islike" style="margin-right: 18rpx;">
-							<u-icon name="heart"></u-icon>
+						<view class="likeNumber" v-if="item.islike">
+							<u-icon name="heart" style="margin-right: 12rpx;"></u-icon>
 							{{item.likeNumber}}
 						</view>
 						<view class="likeNumber1" v-else>
-							<u-icon name="heart-fill" color="#fa3534" style="margin-right: 18rpx;"></u-icon>
+							<u-icon name="heart-fill" color="#fa3534" style="margin-right: 12rpx;"></u-icon>
 							{{item.likeNumber}}
 						</view>
 					</view>

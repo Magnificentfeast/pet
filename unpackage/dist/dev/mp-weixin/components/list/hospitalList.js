@@ -227,35 +227,7 @@ var _default =
       loadStatus: 'loadmore' };
 
 
-  },
-  onReachBottom: function onReachBottom() {var _this = this;
-    this.loadStatus = 'loading';
-    console.log('上拉');
-    // 模拟数据加载
-    setTimeout(function () {
-      _this.addRandomData();
-      _this.loadStatus = 'loadmore';
-    }, 1000);
-  },
-  onShow: function onShow() {
-    this.addRandomData();
-    console.log('组件显示');
-  },
-  onLoad: function onLoad() {
-    this.addRandomData();
-    console.log('组件登录');
-  },
-  methods: {
-    addRandomData: function addRandomData() {
-      for (var i = 0; i < 10; i++) {
-        var index = this.$u.random(0, this.hospitalList.length - 1);
-        // 先转成字符串再转成对象，避免数组对象引用导致数据混乱
-        var item = JSON.parse(JSON.stringify(this.hospitalList[index]));
-        item.id = this.$u.guid();
-        this.hospitalList.push(item);
-        console.log(this.hospitalList);
-      }
-    } } };exports.default = _default;
+  } };exports.default = _default;
 
 /***/ }),
 
