@@ -3,7 +3,7 @@
   padding-bottom: 140rpx;
 }
 .my .user-box {
-  height: 300rpx;
+  height: 250rpx;
   background: #2E8DF4;
   padding: 23rpx 30rpx 0;
 }
@@ -185,6 +185,11 @@
   font-weight: bold;
   color: #555555;
   margin-bottom: 15rpx;
+}
+.my .pets .pet-item .infos .name image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 18rpx;
 }
 .my .pets .pet-item .infos .info {
   font-size: 20rpx;

@@ -15,7 +15,18 @@
     "pages/components/hospital/details/details",
     "pages/components/hospital/yuyue/yuyue",
     "pages/components/notice/notice",
-    "pages/components/mycenter/mytrends/mytrends"
+    "pages/components/mycenter/mytrends/mytrends",
+    "pages/components/mycenter/fans/fans",
+    "pages/components/mycenter/fans/fans1",
+    "pages/components/mycenter/mylikes/mylikes",
+    "pages/components/mycenter/comment/comment",
+    "pages/components/mycenter/Collection/Collection",
+    "pages/components/user/user",
+    "pages/components/inquiry/my/my",
+    "pages/components/inquiry/detail/detail",
+    "pages/components/imglist/imglist",
+    "pages/components/mycenter/zhenliaoRecord/zhenliaoRecord",
+    "pages/components/appointment/my/my"
   ],
   "subPackages": [],
   "window": {

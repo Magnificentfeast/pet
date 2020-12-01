@@ -55,10 +55,6 @@
   font-weight: 400;
   color: #555555;
   line-height: 38rpx;
-  margin-bottom: 18rpx;
-}
-.hospital-item .infos .info {
-  margin-bottom: 20rpx;
 }
 .hospital-item .infos .info .star-box {
   display: inline-block;

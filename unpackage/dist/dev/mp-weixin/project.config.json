@@ -31,8 +31,8 @@
       "list": [
         {
           "id": 0,
-          "name": "pages/components/mycenter/mytrends/mytrends",
-          "pathName": "pages/components/mycenter/mytrends/mytrends",
+          "name": "pages/components/appointment/my/my",
+          "pathName": "pages/components/appointment/my/my",
           "query": ""
         }
       ]

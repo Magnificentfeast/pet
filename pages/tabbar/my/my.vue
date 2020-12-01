@@ -57,6 +57,8 @@
 				<view class="infos">
 					<view class="name">
 						{{pet.name}}
+						<image v-if="pet.sex" src="/static/images/male.png" mode=""></image>
+						<image v-else src="/static/images/female.png" mode=""></image>
 					</view>
 					<view class="info">
 						{{pet.type}} | {{pet.status}} |  {{pet.birthday}}
@@ -231,7 +233,7 @@
 	background: #f9f9f9;
 	padding-bottom: 140rpx;
 	.user-box{
-		height: 300rpx;
+		height: 250rpx;
 		background: #2E8DF4;
 		padding: 23rpx 30rpx 0;
 		.head-img{
@@ -396,6 +398,11 @@
 					font-weight: bold;
 					color: #555555;
 					margin-bottom: 15rpx;
+					image{
+						width: 30rpx;
+						height: 30rpx;
+						margin-left: 18rpx;
+					}
 				}
 				.info{
 					font-size: 20rpx;

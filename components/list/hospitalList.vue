@@ -161,10 +161,8 @@
 			font-weight: 400;
 			color: #555555;
 			line-height: 38rpx;
-			margin-bottom: 18rpx;
 		}
 		.info{
-			margin-bottom: 20rpx;
 			.star-box{
 				display: inline-block;
 				.star-item{

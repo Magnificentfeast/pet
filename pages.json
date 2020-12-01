@@ -156,6 +156,111 @@
             }
             
         }
+        ,{
+            "path" : "pages/components/mycenter/fans/fans",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的粉丝",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/mycenter/fans/fans1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/mycenter/mylikes/mylikes",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的点赞",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/mycenter/comment/comment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的评论",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/mycenter/Collection/Collection",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#2E8DF4",
+				"navigationBarTextStyle":"white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/inquiry/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的问诊",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/inquiry/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "问诊详情",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#2E8DF4",
+				"navigationBarTextStyle":"white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/imglist/imglist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/mycenter/zhenliaoRecord/zhenliaoRecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "诊疗记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/components/appointment/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的预约",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#2E8DF4",
+				"navigationBarTextStyle":"white"
+            }
+            
+        }
     ],
 	"subPackages": [
 	],
