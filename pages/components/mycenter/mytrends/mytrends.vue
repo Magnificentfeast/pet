@@ -11,7 +11,7 @@
 </template>
 
 <script>
-	import petLifeList from '../../../../components/list/petLifeList.vue'
+	import petLifeList from '../../list/petLifeList.vue'
 	export default {
 		components:{
 			"petLifeList":petLifeList

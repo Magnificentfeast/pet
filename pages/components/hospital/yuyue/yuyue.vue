@@ -68,7 +68,10 @@
 			选择预约日期 & 时间
 		</view>
 		<view class="cell-gruops">
-			
+			<view class="chooseTime" @click="choosetime">
+				{{yuyuetime}}
+			</view>
+			<u-picker v-model="timeshow" mode="time" :params="timeparams" @confirm="confirmTime"></u-picker>
 		</view>
 		
 		<view class="line-title">
@@ -175,7 +178,17 @@
 				imageList:[
 					
 				],
-				show:false
+				show:false,
+				yuyuetime:'点击选择预约时间',
+				timeshow:false,
+				timeparams: {
+					year: true,
+					month: true,
+					day: true,
+					hour: true,
+					minute: true,
+					second: false
+				},
 			};
 		},
 		methods:{
@@ -214,6 +227,13 @@
 			remove(index){
 				console.log(this.imageList[index])
 				this.imageList.splice(index,1)
+			},
+			choosetime(){
+				this.timeshow = true
+			},
+			confirmTime(res){
+				console.log(res)
+				this.yuyuetime = res.year + '-' + res.month + '-' + res.day + ' ' + res.hour+ ':' + res.minute
 			}
 		}
 	}
@@ -447,6 +467,12 @@
 				}
 			}
 		}
+	}
+	.chooseTime{
+		height: 100rpx;
+		line-height: 100rpx;
+		font-size: 28rpx;
+		padding: 0 50rpx;
 	}
 }
 </style>

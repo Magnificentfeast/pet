@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "发布动态",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "u-field": "/uview-ui/components/u-field/u-field",

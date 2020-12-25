@@ -3,9 +3,10 @@
   padding-bottom: 140rpx;
 }
 .my .user-box {
-  height: 250rpx;
-  background: #2E8DF4;
-  padding: 23rpx 30rpx 0;
+  height: 377rpx;
+  background: -webkit-linear-gradient(114deg, #2E8DF4, #0DB5F0);
+  background: linear-gradient(-24deg, #2E8DF4, #0DB5F0);
+  padding: 140rpx 30rpx 0;
 }
 .my .user-box .head-img {
   width: 145rpx;
@@ -16,6 +17,13 @@
   position: relative;
   display: inline-block;
   float: left;
+}
+.my .user-box .head-img .edit-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40rpx;
+  height: 40rpx;
 }
 .my .user-box .user-info {
   display: inline-block;
@@ -42,7 +50,7 @@
 .my .user-box .setting {
   position: absolute;
   right: 30rpx;
-  top: 40rpx;
+  top: 140rpx;
   width: 50rpx;
   height: 50rpx;
 }
@@ -235,7 +243,7 @@
   display: inline-block;
   width: 160rpx;
   height: 40rpx;
-  border: 2px solid #F52162;
+  border: 2rpx solid #F52162;
   -webkit-border-radius: 15px;
           border-radius: 15px;
   margin-left: 15rpx;

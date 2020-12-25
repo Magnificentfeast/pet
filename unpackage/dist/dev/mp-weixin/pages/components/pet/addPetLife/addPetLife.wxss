@@ -75,7 +75,7 @@
   position: relative;
   display: inline-block;
   margin-right: 30rpx;
-  overflow: hidden;
+  max-width: 200rpx;
 }
 .addpetlife .content .video .upload .icon,
 .addpetlife .content .imgs .upload .icon {

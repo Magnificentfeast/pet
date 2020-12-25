@@ -201,7 +201,7 @@
 				</view>
 			</view>
 		</view>
-		
+		 
 		<view class="tabbars">
 			<view class="item">
 				<image src="/static/images/kefu-icon.png" mode=""></image>
@@ -221,7 +221,7 @@
 					收藏
 				</view>
 			</view>
-			<view class="item1">
+			<view class="item1" @click="yuyue">
 				<image src="/static/images/yuyue-icon.png" mode=""></image>
 				<view class="text">
 					我要预约
@@ -250,7 +250,11 @@
 			}
 		},
 		methods: {
-			
+			yuyue(){
+				uni.navigateTo({
+					url:'/pages/components/hospital/yuyue/yuyue'
+				})
+			}
 		}
 	}
 </script>

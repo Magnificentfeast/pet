@@ -215,11 +215,11 @@
 			</view>
 		</view>
 		
-		<view class="submit btn">
+		<view class="submit btn" @click="submit">
 			确认提交
 		</view>
 		
-		<view class="zancun btn">
+		<view class="zancun btn" @click="zancun">
 			暂存
 		</view>
 	</view>
@@ -344,6 +344,14 @@
 				    }
 				});
 			},
+			submit(){
+				// uni.navigateTo({
+				// 	url:'/pages/components/Insurance/main/main'
+				// })
+			},
+			zancun(){
+				
+			}
 		}
 	}
 </script>

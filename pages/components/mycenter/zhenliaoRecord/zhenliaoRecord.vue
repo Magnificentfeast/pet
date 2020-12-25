@@ -1,5 +1,6 @@
 <template>
 	<view class="record">
+		<u-navbar title="诊疗记录" :background="{background:'transparent'}" :immersive='true' title-color="#FFFFFF"></u-navbar>
 		<view class="banner">
 			<image src="/static/images/zhenliaobanner.png" mode="" class="bg"></image>
 		</view>

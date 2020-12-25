@@ -282,7 +282,7 @@
 
 				&__button {
 					position: absolute;
-					top: 14rpx;
+					top: 9rpx;
 					left: 50%;
 					transform: translateX(-50%);
 				}
@@ -292,9 +292,10 @@
 					font-size: 26rpx;
 					line-height: 28rpx;
 					position: absolute;
-					bottom: 14rpx;
+					bottom: 10rpx;
 					left: 50%;
 					transform: translateX(-50%);
+					
 				}
 			}
 

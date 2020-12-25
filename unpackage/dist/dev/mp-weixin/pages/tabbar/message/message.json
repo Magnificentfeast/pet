@@ -4,6 +4,7 @@
   "usingComponents": {
     "u-search": "/uview-ui/components/u-search/u-search",
     "u-badge": "/uview-ui/components/u-badge/u-badge",
-    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-tabbar": "/uview-ui/components/u-tabbar/u-tabbar"
   }
 }

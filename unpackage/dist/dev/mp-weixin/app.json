@@ -3,32 +3,51 @@
     "pages/tabbar/index/index",
     "pages/tabbar/pet-life/pet-life",
     "pages/tabbar/message/message",
-    "pages/tabbar/my/my",
-    "pages/components/mycenter/edit-my/edit-my",
-    "pages/components/Insurance/edit/edit",
-    "pages/components/Insurance/main/main",
-    "pages/components/seachTab/main/main",
-    "pages/components/pet/addpet/addpet",
-    "pages/components/pet/addPetLife/addPetLife",
-    "pages/components/pet/quickTreat/quickTreat",
-    "pages/components/hospital/main/main",
-    "pages/components/hospital/details/details",
-    "pages/components/hospital/yuyue/yuyue",
-    "pages/components/notice/notice",
-    "pages/components/mycenter/mytrends/mytrends",
-    "pages/components/mycenter/fans/fans",
-    "pages/components/mycenter/fans/fans1",
-    "pages/components/mycenter/mylikes/mylikes",
-    "pages/components/mycenter/comment/comment",
-    "pages/components/mycenter/Collection/Collection",
-    "pages/components/user/user",
-    "pages/components/inquiry/my/my",
-    "pages/components/inquiry/detail/detail",
-    "pages/components/imglist/imglist",
-    "pages/components/mycenter/zhenliaoRecord/zhenliaoRecord",
-    "pages/components/appointment/my/my"
+    "pages/tabbar/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "components",
+      "pages": [
+        "chat/chat"
+      ]
+    },
+    {
+      "root": "pages/components",
+      "pages": [
+        "list/hospitalList",
+        "list/petLifeList",
+        "list/userList",
+        "mycenter/edit-my/edit-my",
+        "Insurance/edit/edit",
+        "Insurance/main/main",
+        "seachTab/main/main",
+        "pet/addpet/addpet",
+        "pet/addPetLife/addPetLife",
+        "pet/choosepet/choosepet",
+        "pet/quickTreat/quickTreat",
+        "hospital/main/main",
+        "hospital/details/details",
+        "hospital/yuyue/yuyue",
+        "notice/notice",
+        "mycenter/mytrends/mytrends",
+        "mycenter/fans/fans",
+        "mycenter/fans/fans1",
+        "mycenter/mylikes/mylikes",
+        "mycenter/comment/comment",
+        "mycenter/Collection/Collection",
+        "user/user",
+        "inquiry/my/my",
+        "inquiry/detail/detail",
+        "imglist/imglist",
+        "mycenter/zhenliaoRecord/zhenliaoRecord",
+        "mycenter/zhenliaoRecord/add",
+        "appointment/my/my",
+        "appointment/detail/detail",
+        "Insurance/pet/pet"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uView",
@@ -43,36 +62,22 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/tabbar/index/index",
-        "iconPath": "static/images/tabbar1.png",
-        "selectedIconPath": "static/images/tabbar1.png",
-        "text": "首页"
+        "pagePath": "pages/tabbar/index/index"
       },
       {
-        "pagePath": "pages/tabbar/pet-life/pet-life",
-        "iconPath": "static/images/tabbar2.png",
-        "selectedIconPath": "static/images/tabbar2.png",
-        "text": "宠圈"
+        "pagePath": "pages/tabbar/pet-life/pet-life"
       },
       {
-        "pagePath": "pages/tabbar/index/index",
-        "iconPath": "/static/uview/example/min_button.png",
-        "selectedIconPath": "/static/uview/example/min_button_select.png",
-        "text": "发布"
+        "pagePath": "pages/tabbar/index/index"
       },
       {
-        "pagePath": "pages/tabbar/message/message",
-        "iconPath": "static/images/tabbar3.png",
-        "selectedIconPath": "static/images/tabbar3.png",
-        "text": "消息"
+        "pagePath": "pages/tabbar/message/message"
       },
       {
-        "pagePath": "pages/tabbar/my/my",
-        "iconPath": "static/images/tabbar4.png",
-        "selectedIconPath": "static/images/tabbar4.png",
-        "text": "我的"
+        "pagePath": "pages/tabbar/my/my"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap61.json"
 }

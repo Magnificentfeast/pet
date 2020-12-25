@@ -56,7 +56,11 @@ const store = new Vuex.Store({
 				text: '模板',
 				pagePath: '/pages/example/template'
 			}
-		]
+		],
+		userLocation:{
+			latitude:null,
+			longitude:null
+		},
 	},
 	mutations: {
 		$uStore(state, payload) {

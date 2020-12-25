@@ -76,7 +76,7 @@
 				</view>
 			</view>
 			<view class="btn-box">
-				<view v-if="item.status == 1" class="btn upload">上传理赔资料</view>
+				<view v-if="item.status == 1" class="btn upload" @click="upload(item.baodanInfo.id)">上传理赔资料</view>
 				<view v-if="item.status == 2" class="btn checking">理赔资料审核中</view>
 				<view v-if="item.status == 4" class="btn finish">已完成理赔</view>
 			</view>
@@ -224,6 +224,12 @@
 					if(this.page >= 3) this.status = 'nomore';
 					else this.status = 'loading';
 				}, 2000)
+			},
+			upload(id){
+				uni.navigateTo({
+					url:'/pages/components/Insurance/edit/edit?id='+id
+				})
+				
 			}
 		}
 	}

@@ -11,31 +11,22 @@
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
+  "appid": "wxad16ab24436a1e40",
   "projectname": "宠物医院-个人端",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": 0,
-      "list": [
-        {
-          "id": 0,
-          "name": "pages/components/appointment/my/my",
-          "pathName": "pages/components/appointment/my/my",
-          "query": ""
-        }
-      ]
+      "list": []
     }
   }
 }

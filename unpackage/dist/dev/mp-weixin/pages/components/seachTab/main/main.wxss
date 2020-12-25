@@ -1,3 +1,168 @@
+.hospital-item {
+  padding: 32rpx 30rpx 36rpx;
+  border-bottom: 2rpx solid #F4F4F4;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.hospital-item .head-img {
+  width: 125rpx;
+  height: 125rpx;
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(119, 119, 119, 0.2);
+          box-shadow: 0px -5px 10px 0px rgba(119, 119, 119, 0.2);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.hospital-item .head-img image {
+  width: 125rpx;
+  height: 125rpx;
+}
+.hospital-item .head-img .collect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 87rpx;
+  height: 107rpx;
+  z-index: 1;
+}
+.hospital-item .infos {
+  display: inline-block;
+  margin-left: 27rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.hospital-item .infos .name {
+  font-size: 35rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 500;
+  color: #000000;
+  line-height: 38rpx;
+  width: 470rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 38rpx;
+  margin-bottom: 15rpx;
+}
+.hospital-item .infos .location {
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+  line-height: 38rpx;
+}
+.hospital-item .infos .info .star-box {
+  display: inline-block;
+}
+.hospital-item .infos .info .star-box .star-item {
+  display: inline-block;
+}
+.hospital-item .infos .info .star-box .star-item .star {
+  width: 20rpx;
+  height: 20rpx;
+  display: inline-block;
+  margin-right: 9rpx;
+}
+.hospital-item .infos .info .mark {
+  font-size: 23rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #FE6545;
+  line-height: 44rpx;
+}
+.hospital-item .infos .info .range {
+  float: right;
+  font-size: 25rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+  line-height: 38rpx;
+}
+.hospital-item .show-type {
+  width: 250rpx;
+  height: 50rpx;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  font-size: 25rpx;
+}
+.hospital-item .show-type .type {
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  line-height: 50rpx;
+  margin-left: 58rpx;
+}
+.hospital-item .show-type .per {
+  font-family: DIN;
+  line-height: 50rpx;
+  margin-left: 23rpx;
+}
+.hospital-item .show-type .per .num {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.hospital-item .show-type.type1 {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAAyCAMAAABCiTbWAAACAVBMVEUAAAAqqv8as/8Vqv8Xrv8Up/8ap/8aqv8Zrf8Yp/8Xqv8Xrf8Wrv8bqv8Zrf8Zqv8Yq/8YrP8Xqv8Xq/8Yq/8YrP8Xqv8Zqv8Yq/8Yq/8Xq/8Yq/8YrP8Yq/8YrP8Yq/8Xq/8Yq/8Yq/8ZrP8Yq/8Zq/8Xq/8Zq/8Yq/8Yq/8Yq/8Yq/8YrP8Yq/8YrP8Zq/8YrP8Yq/8Yq/8Yq/8Xq/8Yq/8Yq/8Yq/8Yq/8Yq/8Yq/8Yq/8Zq/8arP8brP8drf8erf8frv8hrv8jr/8lsP8msP8nsf8osf8rsv8ssv8ts/8vs/8wtP82tv83tv84t/9Eu/9GvP9Lvf9Pv/9Uwf9Vwf9Wwf9Xwv9Ywv9Zw/9bw/9gxf9lx/9mx/9oyP9pyP9qyf9ryf9syv9uyv9xy/9yzP90zf92zf93zv94zv97z/990P+A0f+C0v+D0v+H1P+L1f+O1v+Q1v+T2P+W2f+b2/+e3P+h3f+i3f+j3f+k3v+l3v+n3/+q4P+s4f+t4f+u4v+y4/+45f+75v+85/++5//A6P/C6f/H6//I6//K7P/N7f/P7v/R7v/S7//T7//U7//X8f/Z8f/a8f/b8v/c8v/h9P/j9f/l9f/n9v/p9//t+P/u+f/v+f/x+v/z+//0+//1+//2/P/4/P/5/f/6/f/7/v/8/v/9/v/+///////5pKZhAAAAO3RSTlMABgoMFhodHh8gISIvMDIzVVZXWF5fY3t9goOSk5SWl5igoaWqsLm6vL3G1dbX2drc7O3u7/H4+fr9/nnFrYMAAAMrSURBVGje5ZrXQxNBEMY3dBUQBRQFpAcpBgwo5SAKooIKWCDBAsEGWMEOiAa7hCISUKRYwAjZv9K7LXeb5BLe574H+HY2L79k73Z2dhAKUkxKutliPSoBUZXVYk5PiUFbKjatRAKpkrS4sODx+TUSWNXkx4cEj8qplUCrNidKnzypUgKvyiQdcNMByRDKMgWSR5olg8gc6U8eUSzOtva5ppfX15enX/e1wmMvjvBb7UXaTH3PhA+r8n3urofGflBc88Jz3jmHAzTXCe5518h3q8GGEayj4QZg7MmcPFrd1ZqnsK6mmoHtcdEMPU8lX8AhtACMPY+SJ/IcrnESh9RkI6y8LpGgF/DxKA6jUVg/e4FCHsdPLHYcVnZYZ5ntMvpeNrDN6wFvfJv7S50H1v6+T0YvZd6p4v64cfbyInF/7p+SpKZXNOwEhW6RazLcuzn5R+VtfklxP8+TmWPfSdwN62nfgVKZa+PZ6zO6sD2yvcnmhmlOCyuf34MymBtgOfsDNn6J8dc65ofo3AAo9AzED6vjlPw6n7mH8cjdbgr/lKK7QKEXonLmZine4MWJa2TcQYZdxH+ic7Og0MvREeZW2Wa2gVdPkKSWDK8qtuUfnVsBhX4YcefV9vJbJLAku7WTinvE4l5Q6FV66O9I4IPsHivm3G+g6AELXtHacSXwUM5tmhTj4vFVUOjWwNccESnLtPs2OpT/XWq5Ctprzn9zo3pCIoO3lb9nltTwOLDNjac0dwT0L9oH6t5rYWgpDU9k24Uy7GaL+oEhoTjbBiyRDT6+yOrlwV7hCwF3fFEPrb0C+lsWuyJsecAOrWViqUKoSW5eoN+GSD5vA4W+X0bfxgtUDoHTI5coTr/wifUaB7wClVaWHBNAF5+/+eVXqRqD9aSTsiTaadxitIGvIMSLp2mDXTyhZDWmf904Ava6EaEsLeoIKsfP24GBS9khWgtsTrfYWuDusUEjLzKFaSjpd82seL0rM65+8A0lRm4jktd8tjHIs01GbRncFaJRNBd6o2huVMgu2QTY7cEJWzSFl8IEP7RFUzilT80sLKuohsJcXVFWmJkaG8z5HxuDI5TcgMBTAAAAAElFTkSuQmCC) no-repeat;
+  background-size: 100%;
+  color: #FFFFFF;
+}
+.hospital-item .show-type.type2 {
+  background: url(data:image/png;base64,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) no-repeat;
+  background-size: 100%;
+  color: #777777;
+}
+
+.user-list .user-item {
+  margin: 0 30rpx;
+  padding: 18rpx 0;
+  position: relative;
+  height: 190rpx;
+}
+.user-list .user-item .headimg {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  left: 38rpx;
+  top: 35rpx;
+}
+.user-list .user-item .infos {
+  display: inline-block;
+  position: absolute;
+  left: 186rpx;
+  top: 50rpx;
+  line-height: 40rpx;
+}
+.user-list .user-item .infos .name {
+  font-size: 32rpx;
+  font-weight: bolder;
+  margin-bottom: 16rpx;
+}
+.user-list .user-item .infos .info {
+  font-size: 28rpx;
+  color: #999999;
+}
+.user-list .user-item .infos .info text {
+  margin-right: 30rpx;
+}
+.user-list .user-item .status {
+  display: inline-block;
+  height: 50rpx;
+  font-size: 28rpx;
+  border: 1px solid #777777;
+  padding: 0 20rpx;
+  line-height: 50rpx;
+  float: right;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  font-weight: 500;
+  margin-top: 50rpx;
+}
+
 page {
   background-color: #FFFFFF;
 }

@@ -11,43 +11,43 @@
 					</picker>
 					<image class="arrow_donw" src="../../../static/images/arrow_donw.png" mode="aspectFill"></image>
 				</label>
-				<view class="input">
+				<view class="input" @click="gosearch">
 					<image class="search-icon" src="../../../static/images/seach.png" mode="aspectFill"></image>
 					<input type="text" value="" placeholder="搜索你想要的内容"/>
 				</view>
 			</view>
 			<view class="pet-item">
-				<view class="item" v-for="item in index_items" :key="index">
+				<view class="item" v-for="item in index_items" :key="index" @click="gotab" :data-url='item.part'>
 					<image :src="item.img" mode="aspectFill"></image>
 					<view class="text">
 						{{item.text}}
 					</view>
 				</view>
 			</view>
-			<view class="quick-link">
+			<navigator class="quick-link" url='/pages/components/pet/quickTreat/quickTreat'>
 				<view class="title">快速问宠医</view>
 				<view class="subtitle">系统自动匹配宠物医院问询</view>
 				<image class="link-img" src="../../../static/images/right-link.png" mode="aspectFill"></image>
-			</view>
+			</navigator>
 		</view>
 		
 		<view class="container" style="padding:28rpx 0;">
 			<view class="quick-link-box">
-				<view>
+				<navigator url="/pages/components/mycenter/zhenliaoRecord/add">
 					<image src="../../../static/images/jilu.png" mode="aspectFill"></image>
-				</view>
-				<view>
+				</navigator>
+				<navigator url="/pages/components/pet/addPetLife/addPetLife">
 					<image src="../../../static/images/share.png" mode="aspectFill"></image>
-				</view>
+				</navigator>
 			</view>
 		</view>
 		
-		<view class="container">
+		<!-- <view class="container">
 			<view class="line-title">
 				育宠课堂
 			</view>
-		</view>
-		
+		</view> -->
+		 
 		<view class="container" style="margin-bottom: 0;">
 			<view class="line-title">
 				附近宠物医院
@@ -55,7 +55,7 @@
 				<text class="location">宁波市鄞州区</text>
 			</view>
 			<view class="hospital-list">
-				<view class="hospital-item">
+				<view class="hospital-item" @click="gohospital">
 					<view class="head-img">
 						<image src="" mode=""></image>
 					</view>
@@ -75,7 +75,7 @@
 						</view>
 					</view>
 				</view>
-				<view class="hospital-item">
+				<view class="hospital-item" @click="gohospital">
 					<view class="head-img">
 						<image src="../../../static/images/logo-test.png" mode="aspectFill"></image>
 					</view>
@@ -95,12 +95,36 @@
 						</view>
 					</view>
 				</view>
-				<view class="more-hospital">
+				<view class="more-hospital" @click="more">
 					查看更多宠物医院
 				</view>
 			</view>
 		</view>
-        <TabBar tabIndex=0></TabBar>
+        
+		<view class="mask" :class="{hidden:maskshow}">
+			<view class="tabbar-tip">
+				<navigator class="item" url="../../components/pet/addPetLife/addPetLife">
+					<view class="img">
+						<image src="/static/images/viedo-blue.png" mode=""></image>
+					</view>
+					<view class="text">
+						晒宠
+					</view>
+				</navigator>
+				<navigator class="item" url="../../components/pet/quickTreat/quickTreat">
+					<view class="img">
+						<image src="/static/images/ask.png" mode=""></image>
+					</view>
+					<view class="text">
+						快速问宠医
+					</view>
+				</navigator>
+			</view>
+			<view class="maskclose" @click="maskshow = true">
+				<image src="/static/images/close.png" mode=""></image>
+			</view>
+		</view>
+		<u-tabbar v-model="tabbar.current" :show="tabbar.show" :inactive-color="tabbar.inactiveColor" :activeColor="tabbar.activeColor" :list="tabbar.list" :mid-button="true" :midButtonSize="110" :before-switch="beforeSwitch"></u-tabbar>
 	</view>
 </template>
 
@@ -113,32 +137,58 @@
 					{
 						img:"/static/images/yiyuan.png",
 						text:"宠物医院",
-						paht:""
+						part:"/pages/components/hospital/main/main"
 					},
 					{
 						img:"/static/images/baoxian.png",
 						text:"宠物医疗保险",
-						paht:""
+						part:""
 					},
 					{
 						img:"/static/images/lipei.png",
 						text:"保险理赔",
-						paht:""
+						part:"/pages/components/Insurance/main/main"
 					}
 				],
-				
+				tabbar:{},
+				maskshow:true
 			};
 		},
 		onShow() {
-			if(typeof this.getTabBar === 'function' && this.getTabBar()){
-				this.getTabBar().setData({
-					selected:0
-				})
-			}
-			console.log('getTabBar',this.getTabBar)
+			this.tabbar = getApp().globalData.tabbar
+			this.tabbar.current = 0
+			console.log(getApp().globalData)
 		},
 		methods:{
-			
+			beforeSwitch(index){
+				if(index!=2){
+					return true
+				}else{
+					console.log(index)
+					this.maskshow = false
+					return false
+				}
+			},
+			gosearch(){
+				uni.navigateTo({
+					url:'/pages/components/seachTab/main/main'
+				})
+			},
+			gotab(e){
+				uni.navigateTo({
+					url:e.currentTarget.dataset.url
+				})
+			},
+			gohospital(){
+				uni.navigateTo({
+					url:'/pages/components/hospital/details/details'
+				})
+			},
+			more(){
+				uni.navigateTo({
+					url:'/pages/components/hospital/main/main'
+				})
+			}
 		}
 	}
 </script>
@@ -146,14 +196,14 @@
 <style lang="less">
 .index{
 	background-color: rgb(240, 240, 240);
-	margin-bottom: 130rpx;
 	.container{
 		background: #FFFFFF;
 		margin-bottom: 16rpx;
 		
 		.banner{
-				margin: 26rpx 30rpx;
-				overflow: hidden;
+			margin: 26rpx 30rpx;
+			overflow: hidden;
+			background-color: #2979FF;
 			image{
 				width: 100%;
 				height: 275rpx;
@@ -214,6 +264,7 @@
 		.pet-item{
 			margin: 43rpx 30rpx;
 			display: flex;
+			border: none;
 			.item{
 				flex: 1;
 				text-align: center;
@@ -236,6 +287,7 @@
 			box-shadow: 0px 0px 50rpx 0px rgba(0, 0, 0, 0.1);
 			border-radius: 60rpx;
 			position: relative;
+			height: 120rpx;
 			view{
 				display: inline-block;
 			}
@@ -245,6 +297,7 @@
 				font-weight: 500;
 				color: #333333;
 				margin-left: 39rpx;
+				margin-top: 0;
 				line-height: 120rpx;
 			}
 			.subtitle{
@@ -265,10 +318,11 @@
 		.quick-link-box{
 			margin: 0rpx 30rpx;
 			display: flex;
-			view:first-child{
+			navigator:first-child{
 				margin-right: 40rpx;
 			}
-			view{
+			navigator{
+				background-color: #2979FF;
 				display: inline-block;
 				flex: 1;
 				image{
@@ -413,13 +467,14 @@
 			}
 		}
 		.more-hospital{
-			font-size: 28rpx;
+			font-size: 24rpx;
 			font-family: Alibaba PuHuiTi;
 			font-weight: 400;
-			color: #3900E9;
+			color: #18ABFF;
 			text-align: center;
 			line-height: 100rpx;
 		}
 	}
 }
+
 </style>

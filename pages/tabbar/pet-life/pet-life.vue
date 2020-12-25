@@ -21,8 +21,12 @@
 								<image class="headimg" :src="item.headImg" mode=""></image>
 							    <text class="name">{{item.userName}}</text> 
 							</view>
-							<view class="likeNumber">
-								<image class="likeicon" src="../../../static/images/like.png" mode=""></image>
+							<view class="likeNumber" v-if="item.islike"  @click="islike(item)">
+								<u-icon name="heart" style="margin-right: 12rpx;"></u-icon>
+								{{item.likeNumber}}
+							</view>
+							<view class="likeNumber1" v-else @click="islike(item)">
+								<u-icon name="heart-fill" color="#fa3534" style="margin-right: 12rpx;"></u-icon>
 								{{item.likeNumber}}
 							</view>
 						</view>
@@ -40,16 +44,47 @@
 								<image class="headimg" :src="item.headImg" mode=""></image>
 							    <text class="name">{{item.userName}}</text> 
 							</view>
-							<view class="likeNumber">
-								<image class="likeicon" src="../../../static/images/like.png" mode=""></image>
+							<view class="likeNumber" v-if="item.islike" @click="islike(item)">
+								<u-icon name="heart" style="margin-right: 12rpx;"></u-icon>
+								{{item.likeNumber}}
+							</view>
+							<view class="likeNumber1" v-else  @click="islike(item)">
+								<u-icon name="heart-fill" color="#fa3534" style="margin-right: 12rpx;"></u-icon>
 								{{item.likeNumber}}
 							</view>
 						</view>
 					</view>
 				</template>
 			</u-waterfall>
+			
+			
+			<view class="mask" :class="{hidden:maskshow}">
+				<view class="tabbar-tip">
+					<navigator class="item" url="../../components/pet/addPetLife/addPetLife">
+						<view class="img">
+							<image src="/static/images/viedo-blue.png" mode=""></image>
+						</view>
+						<view class="text">
+							晒宠
+						</view>
+					</navigator>
+					<navigator class="item" url="../../components/pet/quickTreat/quickTreat">
+						<view class="img">
+							<image src="/static/images/ask.png" mode=""></image>
+						</view>
+						<view class="text">
+							快速问宠医
+						</view>
+					</navigator>
+				</view>
+				<view class="maskclose" @click="maskshow = true">
+					<image src="/static/images/close.png" mode=""></image>
+				</view>
+			</view>
 			<u-loadmore bg-color="rgb(240, 240, 240)" :status="loadStatus" @loadmore="addRandomData"></u-loadmore>
 		</view>
+	
+		<u-tabbar v-model="tabbar.current" :show="tabbar.show" :inactive-color="tabbar.inactiveColor" :activeColor="tabbar.activeColor" :list="tabbar.list" :mid-button="true" :midButtonSize="110" :before-switch="beforeSwitch"></u-tabbar>
 	</view>
 </template>
 
@@ -77,6 +112,7 @@
 				],
 				WaterfallList:[
 					{
+						islike:true,
 						likeNumber: 35,
 						title: '北国风光，千里冰封，万里雪飘',
 						userName: '李白杜甫',
@@ -84,6 +120,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:true,
 						likeNumber: 75,
 						title: '望长城内外，惟余莽莽',
 						userName: '李白杜甫',
@@ -91,6 +128,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:true,
 						likeNumber: 385,
 						title: '大河上下，顿失滔滔',
 						userName: '李白杜甫',
@@ -98,6 +136,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:false,
 						likeNumber: 784,
 						title: '欲与天公试比高',
 						userName: '李白',
@@ -105,6 +144,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:false,
 						likeNumber: 7891,
 						title: '须晴日，看红装素裹，分外妖娆',
 						userName: '李白',
@@ -112,6 +152,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:true,
 						likeNumber: 2341,
 						userName: '李白',
 						title: '江山如此多娇，引无数英雄竞折腰',
@@ -119,6 +160,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:false,
 						likeNumber: 661,
 						userName: '李白',
 						title: '惜秦皇汉武，略输文采',
@@ -126,6 +168,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:true,
 						likeNumber: 1654,
 						title: '唐宗宋祖，稍逊风骚',
 						userName: '李白',
@@ -133,6 +176,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:false,
 						likeNumber: 1678,
 						title: '一代天骄，成吉思汗',
 						userName: '李白',
@@ -140,6 +184,7 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
+						islike:true,
 						likeNumber: 924,
 						title: '只识弯弓射大雕',
 						userName: '李白',
@@ -147,16 +192,21 @@
 						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
 					},
 					{
-					likeNumber: 8243,
-					title: '俱往矣，数风流人物，还看今朝',
-					userName: '李白',
-					image: 'http://pic1.sc.chinaz.com/Files/pic/pic9/202002/zzpic23343_s.jpg',
-					headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
-				}
-				]
+						islike:false,
+						likeNumber: 8243,
+						title: '俱往矣，数风流人物，还看今朝',
+						userName: '李白',
+						image: 'http://pic1.sc.chinaz.com/Files/pic/pic9/202002/zzpic23343_s.jpg',
+						headImg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3315258652,4188474071&fm=11&gp=0.jpg'
+					}
+				],
+				tabbar:{},
+				maskshow:true
 			};
 		},
 		onShow() {
+			this.tabbar = getApp().globalData.tabbar
+			this.tabbar.current = 4
 			this.addRandomData();
 		},	
 		onLoad() {
@@ -171,6 +221,15 @@
 			}, 1000)
 		},
 		methods:{
+			beforeSwitch(index){
+				if(index!=2){
+					return true
+				}else{
+					console.log(index)
+					this.maskshow = false
+					return false
+				}
+			},
 			addRandomData() {
 				for(let i = 0; i < 10; i++) {
 					let index = this.$u.random(0, this.WaterfallList.length - 1);
@@ -183,6 +242,10 @@
 			changetab(index) {
 				this.current = index;
 			},
+			islike(item){
+				// item.islike = !item.islike
+				console.log(item)
+			}
 		}
 	}
 </script>

@@ -22,9 +22,9 @@
 </template>
 
 <script>
-	import hospitalList from "../../../../components/list/hospitalList.vue";
-	import petLifeList from "../../../../components/list/petLifeList.vue";
-	import userList from "../../../../components/list/userList.vue";
+	import hospitalList from "../../list/hospitalList.vue";
+	import petLifeList from "../../list/petLifeList.vue";
+	import userList from "../../list/userList.vue";
 	export default {
 		components:{
 			'hospitalList':hospitalList,

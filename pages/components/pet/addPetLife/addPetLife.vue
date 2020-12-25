@@ -80,7 +80,7 @@
 						<view class="upload">
 							<block v-if="videoImg">
 								<image class="img" :src="videoImg" mode=""></image>
-								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove()"></u-icon>
+								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove"></u-icon>
 							</block>
 							<block v-else>
 								<image  @click="chooseImg" class="icon" src="/static/images/camera.png" mode=""></image>
@@ -92,7 +92,7 @@
 						<view class="upload">
 							<block v-if="videoImg">
 								<image class="img" :src="videoImg" mode=""></image>
-								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove()"></u-icon>
+								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove"></u-icon>
 							</block>
 							<block v-else>
 								<image  @click="chooseImg" class="icon" src="/static/images/camera.png" mode=""></image>
@@ -104,7 +104,7 @@
 						<view class="upload">
 							<block v-if="videoImg">
 								<image class="img" :src="videoImg" mode=""></image>
-								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove()"></u-icon>
+								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove"></u-icon>
 							</block>
 							<block v-else>
 								<image  @click="chooseImg" class="icon" src="/static/images/camera.png" mode=""></image>
@@ -263,7 +263,7 @@
 				position: relative;
 				display: inline-block;
 				margin-right: 30rpx;
-				overflow: hidden;
+				max-width: 200rpx;
 				.icon{
 					width: 78rpx;
 					height: 68rpx;

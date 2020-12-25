@@ -29,7 +29,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="addpet-btn">
+			<view class="addpet-btn" @click="add">
 				<view class="text">
 					<image src="/static/images/add.png" mode="" class="add-icon"></image>
 					添加宠物
@@ -86,6 +86,11 @@
 					item.checked = false
 				})
 				pet.checked = true
+			},
+			add(){
+				uni.navigateTo({
+					url:'/pages/components/pet/addpet/addpet'
+				})
 			}
 		}
 	}

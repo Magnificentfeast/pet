@@ -3,7 +3,10 @@
   "enablePullDownRefresh": false,
   "navigationBarBackgroundColor": "#2E8DF4",
   "navigationBarTextStyle": "white",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "u-icon": "/uview-ui/components/u-icon/u-icon"
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-tabbar": "/uview-ui/components/u-tabbar/u-tabbar"
   }
 }

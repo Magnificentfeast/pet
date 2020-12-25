@@ -6,8 +6,10 @@ image{
 page{
 	background-color: #F9F9F9;
 }
-
 /*通用*/
+.hidden{
+	display: none;
+}
 .title{
 	font-size: 35rpx;
 	font-family: Alibaba PuHuiTi;
@@ -194,4 +196,69 @@ page{
 			}
 		}
 	}
+}
+
+
+/*底部弹出框*/
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10070;
+    transition: all 1s ease-in-out;
+}
+.tabbar-tip{
+    transition: all 1s ease-in-out;
+	position: absolute;
+	bottom: 150rpx;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 700rpx;
+	height: 330rpx;
+	display: flex;
+	background-image: url(/static/images/maskbg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	.item{
+		flex: 1;
+		text-align: center;
+		padding-top: 46rpx;
+		position: relative;
+		.img{
+			width: 150rpx;
+			height: 150rpx;
+			margin: 0 auto;
+		}
+		.text{
+			font-size: 32rpx;
+			font-family: Alibaba PuHuiTi;
+			font-weight: 400;
+			color: #333333;
+			margin-top: 30rpx;
+		}
+		&:first-child{
+			&::after{
+				position: absolute;
+				right: 0;
+				top: 27rpx;
+				content: '';
+				width: 3rpx;
+				height: 186rpx;
+				background: #F5F5F5;
+			}
+		}
+	}
+}
+.maskclose{
+	position: absolute;
+	width: 90rpx;
+	height: 90rpx;
+	bottom: 40rpx;
+	left: 50%;
+	transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
 }

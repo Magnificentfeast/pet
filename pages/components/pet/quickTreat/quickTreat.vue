@@ -1,10 +1,11 @@
 <template>
 	<view class="">
+		<u-navbar back-text="返回" title="快速问宠医" :background="transparent" :border-bottom="false"></u-navbar>
 		<view class="banner">
 			<image src="/static/images/quickTreat-banner.png" mode="" class="bg"></image>
 		</view>
 		<view class="content">
-			<view class="cell-gruops" style="">
+			<view class="cell-gruops" style="" @click="choosepet">
 				<view class="pet-item">
 					<view class="head-img">
 						<image :src="pet.img" mode=""></image>
@@ -97,7 +98,7 @@
 		<view class="btn submit" @click="submit">
 			一键发布
 		</view>
-		<u-modal v-model="show" @cancel="" @confirm=""
+		<u-modal v-model="show" @cancel="" @confirm="confirm"
 		:show-title="false" show-cancel-button="ture" confirm-text="前往" cancel-text="返回" confirm-color="#18ABFF">
 			<view class="modal-contect">
 				<view class="icon">
@@ -174,6 +175,16 @@
 			remove(index){
 				console.log(this.imageList[index])
 				this.imageList.splice(index,1)
+			},
+			choosepet(){
+				uni.navigateTo({
+					url:'/pages/components/pet/choosepet/choosepet'
+				})
+			},
+			confirm(){
+				uni.navigateTo({
+					url:'/pages/components/inquiry/my/my'
+				})
 			}
 		}
 	}

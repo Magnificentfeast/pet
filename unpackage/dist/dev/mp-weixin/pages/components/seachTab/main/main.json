@@ -3,8 +3,8 @@
   "enablePullDownRefresh": false,
   "usingComponents": {
     "u-search": "/uview-ui/components/u-search/u-search",
-    "hospital-list": "/components/list/hospitalList",
-    "pet-life-list": "/components/list/petLifeList",
-    "user-list": "/components/list/userList"
+    "hospital-list": "/pages/components/list/hospitalList",
+    "pet-life-list": "/pages/components/list/petLifeList",
+    "user-list": "/pages/components/list/userList"
   }
 }

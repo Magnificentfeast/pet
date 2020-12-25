@@ -5,7 +5,7 @@
 			:show-action="showAction" @clear="clearinput"></u-search>
 		</view>
 		<view class="tabs">
-			<view class="tab-item" v-for="(tab,index) in tabs" :key="index">
+			<view class="tab-item" v-for="(tab,index) in tabs" :key="index" @click="gotab(tab)">
 				<view class="img">
 					<image :src="tab.image" mode=""></image>
 				</view>
@@ -16,7 +16,7 @@
 			</view>
 		</view>
 		<view class="content">
-			<view class="message-box" v-for="(item,index) in list" :key="index">
+			<view class="message-box" v-for="(item,index) in list" :key="index" @click="chat(item)">
 				<view class="headimg">
 					<image :src="item.headimg" mode=""></image>
 				</view>
@@ -34,7 +34,32 @@
 				<u-badge type="error" :count="item.count" :offset="offset"></u-badge>
 			</view>
 			<u-loadmore :status="status" />
+		</view>        
+		
+		<view class="mask" :class="{hidden:maskshow}">
+			<view class="tabbar-tip">
+				<navigator class="item" url="../../components/pet/addPetLife/addPetLife">
+					<view class="img">
+						<image src="/static/images/viedo-blue.png" mode=""></image>
+					</view>
+					<view class="text">
+						晒宠
+					</view>
+				</navigator>
+				<navigator class="item" url="../../components/pet/quickTreat/quickTreat">
+					<view class="img">
+						<image src="/static/images/ask.png" mode=""></image>
+					</view>
+					<view class="text">
+						快速问宠医
+					</view>
+				</navigator>
+			</view>
+			<view class="maskclose" @click="maskshow = true">
+				<image src="/static/images/close.png" mode=""></image>
+			</view>
 		</view>
+		<u-tabbar v-model="tabbar.current" :show="tabbar.show" :inactive-color="tabbar.inactiveColor" :activeColor="tabbar.activeColor" :list="tabbar.list" :mid-button="true" :midButtonSize="110" :before-switch="beforeSwitch"></u-tabbar>
 	</view>
 </template>
 
@@ -45,30 +70,31 @@
 				isdot:true,
 				iscenter:true,
 				offset:[80,50],
+				tabbar:{},
 				
 				tabs:[
 					{
 						image:'/static/images/tongzhi.png',
 						text:'通知',
-						urlpath:'',
+						urlpath:'/pages/components/notice/notice',
 						count:3
 					},
 					{
 						image:'/static/images/wenzhen.png',
 						text:'问诊',
-						urlpath:'',
+						urlpath:'/pages/components/inquiry/my/my',
 						count:4
 					},
 					{
 						image:'/static/images/pinglun.png',
 						text:'评论',
-						urlpath:'',
+						urlpath:'/pages/components/mycenter/comment/comment',
 						count:0
 					},
 					{
 						image:'/static/images/zan.png',
 						text:'赞',
-						urlpath:'',
+						urlpath:'/pages/components/mycenter/mylikes/mylikes',
 						count:0
 					}
 				],
@@ -111,8 +137,43 @@
 				],
 				status: 'loadmore',
 				page: 0,
-				total:5
+				total:5,
+				maskshow:true
 			};
+		},
+		onShow() {
+			this.tabbar = getApp().globalData.tabbar
+			this.tabbar.current = 1
+			console.log(this.tabbar)
+		},
+		methods:{
+		
+			beforeSwitch(index){
+				if(index!=2){
+					return true
+				}else{
+					console.log(index)
+					this.maskshow = false
+					return false
+				}
+			},
+			gotab(tab){
+				uni.navigateTo({
+					url:tab.urlpath
+				})
+			},
+			chat(item){
+				this.$u.route({
+					url: '/components/chat/chat',
+					params: {
+						formUser:{
+							id:1,
+							headimg:'/static/images/user-icon.png',
+							usrname:'宠物店'
+						}
+					}
+				})
+			}
 		}
 	}
 </script>

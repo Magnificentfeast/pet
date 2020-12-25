@@ -1,7 +1,8 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "我要预约",
   "enablePullDownRefresh": false,
   "usingComponents": {
+    "u-picker": "/uview-ui/components/u-picker/u-picker",
     "u-row": "/uview-ui/components/u-row/u-row",
     "u-icon": "/uview-ui/components/u-icon/u-icon",
     "u-modal": "/uview-ui/components/u-modal/u-modal"

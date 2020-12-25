@@ -3,14 +3,14 @@
 		<view class="banner">
 			<image src="/static/images/banner_index.png" mode="aspectFill"></image>
 		</view>
-		<view class="notice-box">
+		<navigator class="notice-box" url="/pages/components/notice/notice">
 			<view class="left-icon">
 				<image src="/static/images/notice.png" mode=""></image>
 			</view>
 			<view class="notice">
 				<u-notice-bar mode="vertical" :list="list" type="none" :more-icon="true" :volume-icon="false"></u-notice-bar>
 			</view>
-		</view>
+		</navigator>
 		<view class="content">
 			<view class="search-box">
 				<u-search v-model="keyword" :show-action="false" @change=""></u-search>
@@ -34,7 +34,8 @@
 </template>
 
 <script>
-	import hospitalList from "../../../../components/list/hospitalList.vue";
+	import hospitalList from "../../list/hospitalList.vue";
+	const app = getApp()
 	export default {
 		components:{
 			'hospitalList':hospitalList
@@ -59,6 +60,22 @@
 			// 	this.$refs.hospital.loadStatus = 'loadmore';
 			// }, 1000)
 		},
+		onShow() {
+			var userLocation = app.globalData.userLocation
+			wx.getLocation({
+			 type: 'wgs84',
+			 success (res) {
+				const latitude = res.latitude
+				const longitude = res.longitude
+				const speed = res.speed
+				const accuracy = res.accuracy
+			 }
+			})
+			console.log(userLocation)
+		},
+		methods:{
+			
+		}
 	}
 </script>
 

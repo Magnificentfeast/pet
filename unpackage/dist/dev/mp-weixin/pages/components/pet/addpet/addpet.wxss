@@ -103,7 +103,6 @@
   height: 253rpx;
   width: 100%;
   margin-bottom: 24rpx;
-  overflow: hidden;
 }
 .addpet .phone .phone-item .img-box .icon {
   width: 64rpx;

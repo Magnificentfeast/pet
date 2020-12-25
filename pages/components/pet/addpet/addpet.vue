@@ -49,10 +49,10 @@
 				
 				<u-form-item label-position="top" label="宠物性别" label-width="150">
 					<view class="select sex">
-						<view class="select-item checked" @click="checkSex('公')">
+						<view class="select-item" :class="{'checked':petInfo.sex == 1}" data-sex='1' @click="checkSex">
 							公
 						</view>
-						<view class="select-item" @click="checkSex('母')">
+						<view class="select-item" :class="{'checked':petInfo.sex == 0}" data-sex='0' @click="checkSex">
 							母
 						</view>
 					</view>
@@ -60,10 +60,10 @@
 				
 				<u-form-item label-position="top" label="是否绝育" label-width="150">
 					<view class="select jj">
-						<view class="select-item" @click="checkjj(1)">
+						<view class="select-item" :class="{'checked':petInfo.isjueyu == 1}" data-jj='1' @click="checkjj">
 							是
 						</view>
-						<view class="select-item checked" @click="checkjj(0)">
+						<view class="select-item" :class="{'checked':petInfo.isjueyu == 0}" data-jj='0' @click="checkjj">
 							否
 						</view>
 					</view>
@@ -80,7 +80,7 @@
 					<u-col span="4" class="phone-item">
 						<view class="img-box">
 							<blcok v-if="petInfo.phone1">
-								<image :src="petInfo.phone1" mode="" class="img"></image>
+								<image :src="petInfo.phone1" mode="" class="img" @click="showimg(petInfo.phone1)"></image>
 								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove('phone1')"></u-icon>
 							</blcok>
 							<image v-else src="/static/images/camera.png" mode="" class="icon" @click="chooseimg1"></image>
@@ -92,7 +92,7 @@
 					<u-col span="4" class="phone-item">
 						<view class="img-box">
 							<blcok v-if="petInfo.phone2">
-								<image :src="petInfo.phone2" mode="" class="img"></image>
+								<image :src="petInfo.phone2" mode="" class="img" @click="showimg(petInfo.phone2)"></image>
 								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove('phone2')"></u-icon>
 							</blcok>
 							<image v-else src="/static/images/camera.png" mode="" class="icon" @click="chooseimg2"></image>
@@ -104,7 +104,7 @@
 					<u-col span="4" class="phone-item">
 						<view class="img-box">
 							<blcok v-if="petInfo.phone3">
-								<image :src="petInfo.phone3" mode="" class="img"></image>
+								<image :src="petInfo.phone3" mode="" class="img" @click="showimg(petInfo.phone3)"></image>
 								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove('phone3')"></u-icon>
 							</blcok>
 							<image v-else src="/static/images/camera.png" mode="" class="icon" @click="chooseimg3"></image>
@@ -116,7 +116,7 @@
 					<u-col span="4" class="phone-item">
 						<view class="img-box">
 							<blcok v-if="petInfo.phone4">
-								<image :src="petInfo.phone4" mode="" class="img"></image>
+								<image :src="petInfo.phone4" mode="" class="img" @click="showimg(petInfo.phone4)"></image>
 								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove('phone4')"></u-icon>
 							</blcok>
 							<image v-else src="/static/images/camera.png" mode="" class="icon" @click="chooseimg4"></image>
@@ -128,7 +128,7 @@
 					<u-col span="4" class="phone-item">
 						<view class="img-box">
 							<blcok v-if="petInfo.video">
-								<video v-if="petInfo.video" :src="petInfo.video" mode="" class="img"></video>
+								<video v-if="petInfo.video" :src="petInfo.video" mode="" class="img" @click="showvideo(petInfo.video)"></video>
 								<u-icon class="u-clear-icon" name="close-circle-fill" size="34" color="#fa3534" @click="remove('video')"></u-icon>
 							</blcok>
 							<image v-else src="/static/images/video.png" mode="" class="icon" @click="choosevideo"></image>
@@ -141,7 +141,7 @@
 			</view>
 		</view>
 		
-		<view class="submit btn">
+		<view class="submit btn" @click="submit">
 			确认提交
 		</view>
 		
@@ -160,8 +160,8 @@
 					name:'',
 					type:'',
 					birthday:'',
-					sex:'',
-					isjueyu:'',
+					sex:0,
+					isjueyu:0,
 					phone1:'',
 					phone2:'',
 					phone3:'',
@@ -206,6 +206,12 @@
 				uni.chooseImage({
 				    count: 1, //默认9
 				    success: function (res) {
+						uni.getImageInfo({
+							src: res.tempFilePaths[0],
+							success: function (image) {
+								console.log(image);
+							}
+						})
 						that.petInfo.phone1 = res.tempFilePaths[0]
 				        console.log(that.petInfo.phone1);
 				    }
@@ -252,9 +258,53 @@
 				});
 				
 			},
+			showimg(pictrue){
+				uni.previewImage({
+					urls: [pictrue],
+					indicator:"none"
+				});
+			},
+			showvideo(video){
+				console.log(video)
+				uni.openVideoEditor({
+					filePath:video,
+					success:res=>{
+						console.log(res)
+					},
+					fail:err=>{
+						console.log(err)
+					}
+				})
+			},
 			remove(item){
 				console.log(this.petInfo[item]);
 				this.petInfo[item] = ''
+			},
+			checkSex(e){
+				console.log(e)
+				this.petInfo.sex = e.currentTarget.dataset.sex
+			},
+			checkjj(e){
+				console.log(e)
+				this.petInfo.isjueyu = e.currentTarget.dataset.jj
+			},
+			submit(){
+				console.log('提交')
+				console.log(this.petInfo.phone1)
+				uni.uploadFile({
+					url: 'http://192.168.1.102:8000/api/system/oss/upload', //仅为示例，非真实的接口地址
+					filePath: this.petInfo.phone1,
+					name: 'file',
+					header:{
+						// 'Content-Type': 'application/x-www-form-urlencoded',
+						// 'Accept': 'application/json, text/javascript, */*; q=0.01',
+						'token': '0e93c780680e46f2be49d9c137c3daa7'
+					},
+					success: (uploadFileRes) => {
+						console.log(uploadFileRes.data);
+					},
+					
+				});
 			}
 		}
 	}
@@ -358,7 +408,6 @@
 				height: 253rpx;
 				width: 100%;
 				margin-bottom: 24rpx;
-				overflow: hidden;
 				.icon{
 					width: 64rpx;
 					height: 56rpx;

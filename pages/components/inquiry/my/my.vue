@@ -56,7 +56,7 @@
 			<view class="cell-box foot">
 				<text>发布于{{item.daytext}}</text> 
 				<text style="margin-left: 20rpx;">{{item.hourtext}}</text>
-				<view class="godetial">
+				<view class="godetial" @click="godetial(item)">
 					 <u-icon name="arrow-right"  label="进入详情" label-pos='left'></u-icon>
 				</view>
 			</view>
@@ -179,6 +179,13 @@
 					},
 				]
 			};
+		},
+		methods:{
+			godetial(item){
+				uni.navigateTo({
+					url:'/pages/components/inquiry/detail/detail?id='+item.id
+				})
+			}
 		}
 	}
 </script>

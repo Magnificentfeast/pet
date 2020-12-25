@@ -20,7 +20,7 @@
 					<view class="name">
 						{{item1.hospitalInfo.name}}
 					</view>
-					<view class="cure-box">
+					<view class="cure-box" @click="detail(item1)">
 						<view>
 							<text>
 							预约单号：{{item1.id}}
@@ -38,10 +38,10 @@
 						</view>
 					</view>
 					<view class="btn-box">
-						<view class="btn">
+						<view class="btn" @click="cancal(item1)">
 							取消订单
 						</view>
-						<view class="btn">
+						<view class="btn" @click="reyuyue(item1)">
 							重新预约
 						</view>
 					</view>
@@ -59,7 +59,7 @@
 					<view class="name">
 						{{item2.hospitalInfo.name}}
 					</view>
-					<view class="cure-box">
+					<view class="cure-box" @click="detail(item2)">
 						<view>
 							<text>
 							诊疗单号：{{item2.id}}
@@ -76,7 +76,7 @@
 							</text>
 						</view>
 					</view>
-					<view class="btn-box">
+					<view class="btn-box" @click="addzhenliao(item2)">
 						<view class="btn">
 							记录诊疗过程
 						</view>
@@ -166,6 +166,26 @@
 		methods:{
 			changetab(index){
 				this.curre = index
+			},
+			detail(item){
+				uni.navigateTo({
+					url:'/pages/components/appointment/detail/detail?id='+item.id
+				})
+			},
+			cancal(item){
+				
+			},
+			reyuyue(item){
+				if(item.outtime){
+					uni.navigateTo({
+						url:'/pages/components/hospital/yuyue/yuyue?id='+item.id
+					})
+				}
+			},
+			addzhenliao(item){
+				uni.navigateTo({
+					url:'/pages/components/mycenter/zhenliaoRecord/add?id='+item.id
+				})
 			}
 		}
 	}

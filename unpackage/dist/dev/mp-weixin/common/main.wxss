@@ -3371,6 +3371,9 @@ page {
   background-color: #F9F9F9;
 }
 /*通用*/
+.hidden {
+  display: none;
+}
 .title {
   font-size: 35rpx;
   font-family: Alibaba PuHuiTi;
@@ -3558,5 +3561,75 @@ page {
   display: inline-block;
   margin-right: 15rpx;
   color: #fa3534;
+}
+/*底部弹出框*/
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10070;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.tabbar-tip {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  bottom: 150rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 700rpx;
+  height: 330rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAFNCAMAAADVQkxQAAABblBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+DpEQuAAAAeXRSTlMAAQIFBgcLDBITFBUWGRobICEiIyQlJicqKywwMTIzNTc4Oj0/QUNETE5QW1xdXl9hZGVqa25vcXJzdXaChIeJi5CVlpeZmpukpaanqauvsLi6vr/Dx8jJytPV1tfY2tze3+Dh4ujp6uzt7u/w8fLz9fb3+Pr7/P3+OmDNTAAABlpJREFUGBntwYtbG+QBxeEDFi+B4tgYqbphVWzVMSeiaFcVsVBEVLSdpl4KKqglUjRqUs9/PxGr0HILUPKd5/m9rw6q79zE1Pu1pRuNpoF7oNm4sVR7f2riXJ+O0+D4/IqBE7IyPz6oY/H4m4sGTtjim4/riCqvfmagIz57taLDq840DHRMY6aqw/n72y0DHdV6e0jtq1xqGui45qWK2tM1tmqgCKtjXWrDwBUDxbjyVx3Yv9cNFGT9eR1Mz2UDhbncowM4XTNQnNpp7euRrwwU6KtHtI8n6waKVD+rPY18b6BQ6yPaw9l1A8VaP6tdnakbKFj9jHbRv2ygaMv92lFPzUDhaj3ayayB4s1qB/8yEGBUdxlYMxBg7S+6Q9cVAxGudGm7MQMhxrRNZdVAiNWKtrpkIMa0thhqGojRHNKf5gwEmdMfqi0DQVpV3TZjIMqMftfbMBCl0atN/zUQ5qI2XTcQ5rp+M2wgzrA2TBqIM6kNiwbiLOpXfzMQaFDSuIFA45LmDQSal7RiINCK1GcgUq/OG4h0XhMGIk1oykCkKS0YiLSgmoFINS0ZiLSkVQORVvWTgUg/yECmlgyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAyEkoFQMhBKBkLJQCgZCCUDoWQglAxkauknA5F+UN1ApFUtGYi0pJqBSDUtGIi0oCkDkaY0YSDShM4biHRefQYi9UkrBgKtSJo3EGhe0riBQOOSBg0EGtSvFg3EWdSGSQNxJrVh2ECcYf3muoEw17XpooEwF7Wpt2EgSqNXv5sxEGVGt1VbBoK0qvrDnIEgc/rTUNNAjOaQtpg2EGNaW1VWDYRY7dU2YwZCvKjtuq4aiHC1S3cYWDMQYG1Adxk1EGBUO5g1ULxZ7aSnZqBw13q0o/5lA0Vb7tcuztQNFKx+Rrs6u26gWOtPaA8j3xso1PqI9vRk3UCR6k9oH48uGyjQ8qPa1+lrBopz7bQOoGfWQGFme3Qwo2sGCnJzVAc2cNVAMa4OqA1dY3UDRai/2KX2VKabBjquOV1R+4bmWgY6qjU3pMOpzjQMdExjpqrDq1z43EBHfH6hoiManlw0cMIWJ4d1LAZfml8xcEJW5l8a1HHqOzcxtVBbutFoGbgHWo0bS7WFqYlzfcK9dt87Pg7v3CfgpHW/5aN7q1tAB7zmo3pNQGe8fMtHcetlAZ0y+rMP7+dRAZ3zTMOH1XhGQCc99Z0P57unBHTWY1/7ML5+TECnDX7h9n0xKKDz+j9xuz7pF1CCBz9yez56UEAZ7v/A7fjgfgGlOPWuD+7dUwLK0T3tg5ruFlCU130wrwsozSu3vL9brwgoz/NN76f5HwElerbhvTWeFVCmkTXvZW1EQKn+8Y13980/BZRr6Evv5sshASV7+FPv7NOHBZTtoY+9k48fElC6Bz703T58QED5Tr3nO713SkCC7hlvd7lbQIg3vNUbAnJc+MW3/XJBQJIXmt7UfEFAlud+9IYfnxOQ5umbtm8+LSDP8Lf+dlhAour/qsI9839y7AL5sUh53QAAAABJRU5ErkJggg==);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.tabbar-tip .item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding-top: 46rpx;
+  position: relative;
+}
+.tabbar-tip .item .img {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+}
+.tabbar-tip .item .text {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 30rpx;
+}
+.tabbar-tip .item:first-child::after {
+  position: absolute;
+  right: 0;
+  top: 27rpx;
+  content: '';
+  width: 3rpx;
+  height: 186rpx;
+  background: #F5F5F5;
+}
+.maskclose {
+  position: absolute;
+  width: 90rpx;
+  height: 90rpx;
+  bottom: 40rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 

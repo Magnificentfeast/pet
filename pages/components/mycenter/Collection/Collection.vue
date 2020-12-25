@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import hospitalList from "../../../../components/list/hospitalList.vue"
+	import hospitalList from "../../list/hospitalList.vue"
 	export default {
 		data() {
 			return {

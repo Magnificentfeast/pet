@@ -3,7 +3,9 @@
   "enablePullDownRefresh": false,
   "navigationBarBackgroundColor": "#0037be",
   "navigationBarTextStyle": "white",
+  "navigationStyle": "custom",
   "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
     "u-row": "/uview-ui/components/u-row/u-row",
     "u-icon": "/uview-ui/components/u-icon/u-icon",
     "u-modal": "/uview-ui/components/u-modal/u-modal"
